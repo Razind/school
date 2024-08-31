@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Образовательные стандарты{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Образовательные стандарты и требования</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://fgosreestr.ru/educational_standard/federalnyi-gosudarstvennyi-obrazovatelnyi-standart-nachalnogo-obshchego-obrazovaniia-2">Федеральный государственный образовательный стандарт начального общего образования</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://fgosreestr.ru/educational_standard/federalnyi-gosudarstvennyi-obrazovatelnyi-standart-osnovnogo-obshchego-obrazovaniia-2">Федеральный государственный образовательный стандарт основного общего образования</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://fgosreestr.ru/educational_standard/federalnyi-gosudarstvennyi-obrazovatelnyi-standart-srednego-obshchego-obrazovaniia-1">Федеральный государственный образовательный стандарт среднего общего образования</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://fgosreestr.ru/educational_standard/federalnyi-gosudarstvennyi-obrazovatelnyi-standart-doshkolnogo-obrazovaniia">Федеральный государственный образовательный стандарт дошкольного образования</a>
+        </li>
+    </ul>
+    
+    
+
+</div>
+{% endblock %}

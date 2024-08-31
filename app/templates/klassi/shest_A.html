@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}6 "А" класс{% endblock %}
+
+{% block content %}
+<h1 class="text-center">6 "А" класс</h1>
+<h1 class="text-center">Классный руководитель: Чкоидзе Яна Амирановна</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=G5M4BTBH2cY">Акция Называться Русским 4 "А" класс</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://speakerdeck.com/school70/ekskursiia-po-samarie">Экскурсия по родному городу 4 А класса.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://speakerdeck.com/school70/prazdnik-novyi-god-4-a-klass">Праздник Новый Год в Школе 70.</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

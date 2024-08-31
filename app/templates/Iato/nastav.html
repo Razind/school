@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Наставничество{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Наставничество</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Положение о наставничестве</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Приказ от 09.11.21г. О назначении куратора реализации программы многофункционального наставничества в МБОУ Школе №70 г.о. Самара.</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

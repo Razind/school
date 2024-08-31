@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Национальные проекты{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Национальные проекты</h1>
+<div style="margin-top: 30px;">
+    <p>Проекты федерального масштаба, принятые в России в 2018 году в соответствии с Указом Президента Российской Федерации от 07.05.2018 № 204 «О национальных целях и стратегических задачах развития Российской Федерации на период до 2024 года» по 13 направлениям.</p>
+    <p>Здравоохранение. Демография. роизводительность труда и поддержка занятости. Безопасные и качественные автомобильные дороги. Комплексный план модернизации и расширения магистральной инфраструктуры. Экология. Жилье и городская среда. Малое и среднее предпринимательство. Культура. Наука. Цифровая экономика. Международная кооперация и экспорт. Образование.</p>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://government.ru/rugovclassifier/section/2641/">Национальные проекты Российской Федерации</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="pdf">Национальный проект ОБРАЗОВАНИЕ</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="pdf">Национальный проект ДЕМОГРАФИЯ</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

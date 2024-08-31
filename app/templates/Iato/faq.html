@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+<!-- Подключение CSS Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Подключение JavaScript и jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% extends 'main/base.html' %}
+
+{% block title %}FAQ{% endblock %}
+
+{% block content %}
+
+<!-- {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="container mt-4">
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+-->
+<h1 class="text-center">FAQ</h1>
+
+<!-- Форма для ввода ФИО, почты и вопроса -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Задайте свой вопрос</h2>
+    <form method="POST" action="{{ url_for('question.faq') }}">
+        <div class="form-group">
+            <label for="fullName">ФИО</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Электронная почта</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="question">Ваш вопрос</label>
+            <textarea class="form-control" id="question" name="question" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>      
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
+    <div class="accordion" id="faqAccordion">
+        <div class="card">
+            <div class="card-header p-0" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link btn-block text-left p-3" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="text-decoration: none; color: black; font-weight: 500;">
+                        Вопрос 1: Как я могу связаться с поддержкой?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse fade" aria-labelledby="headingOne">
+                <div class="p-3" !important style=" height: 250px; overflow-y: auto;">
+                    Вы можете связаться с поддержкой через форму на этой странице или по электронной почте, указанной в разделе контактов.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header p-0" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link btn-block text-left p-3 collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration: none; color: black; font-weight: 500;">
+                        Вопрос 2: Как узнать статус моего заказа?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse fade" aria-labelledby="headingTwo">
+                <div class="p-3" !important style=" height: 250px; overflow-y: auto;">
+                    Статус вашего заказа можно узнать, войдя в ваш личный кабинет на сайте или связавшись с поддержкой.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header p-0" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link btn-block text-left p-3 collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration: none; color: black; font-weight: 500;">
+                        Вопрос 3: Как вернуть товар?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse fade" aria-labelledby="headingThree">
+                <div class="p-3" !important style=" height: 250px; overflow-y: auto;">
+                    Для возврата товара, пожалуйста, ознакомьтесь с нашей политикой возврата, доступной на сайте, и свяжитесь с поддержкой для получения дальнейших инструкций.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

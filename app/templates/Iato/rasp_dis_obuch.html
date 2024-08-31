@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Расписание дистанционного обучения{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Расписание дистанционного обучения</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Расписание дистанционного обучения  на 11.01.2023г. МБОУ Школа №70 г.о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Расписание дистанционного обучения  на 10.01.2023г. МБОУ Школа №70 г.о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Расписание дистанционного обучения  на 09.01.2023г. МБОУ Школа №70 г.о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.skype.com/ru/get-skype/">Скачать приложение Skype (бесплатно) для компьютера и мобильного телефона.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://zoom.us/download#client_4meeting">Скачать приложение ZOOM (бесплатно) для компьютера и мобильного телефона.</a>
+        </li>
+    </ul>
+    
+</div>
+{% endblock %}

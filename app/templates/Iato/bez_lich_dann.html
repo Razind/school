@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Безопасность личных данных{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Безопасность личных данных</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list" >
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">ПОЛОЖЕНИЕ об обработке и обеспечении безопасности персональных данных, обрабатываемых в информационных системах персональных данных муниципального бюджетного общеобразовательного учреждения «Школы № 70 имени Героя Советского Союза А.В. Мельникова» г. о. Самара.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">ПОЛОЖЕНИЕ об обработке и защите персональных данных работников, обучающихся и их родителей (законных представителей).</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">ПОЛОЖЕНИЕ о политике в отношении обработки персональных данных в муниципальном бюджетном общеобразовательном учреждении «Школы № 70 имени Героя Советского Союза А.В. Мельникова» г. о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Приложения: Формы согласия на обработку персональных данных</a>
+        </li>       
+    </ul>
+</div>
+{% endblock %}

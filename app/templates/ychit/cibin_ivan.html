@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Цибин Иван Владимирович{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Цибин Иван Владимирович</h1>
+<div style="margin-top: 30px; display: flex; flex-direction: row-reverse; justify-content: space-between;">
+    <div style="max-width: 500px;">
+        <img src="{{ url_for('static', filename='img/cibin.png') }}" alt="cibin.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <div>
+        <h5>Ф.И.О.</h5>
+        <p>Цибин Иван Владимирович</p>
+        <h5>Должность</h5>
+        <p>Учитель истории и обществознания</p>
+        <h5>Предмет</h5>
+        <p>История, обществознание</p>
+        <h5>Образовани</h5>
+        <p>Высшее.Самарский Государственный Университет. Исторический факультет.</p>
+    </div>
+    
+
+</div>
+{% endblock %}

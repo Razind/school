@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Капитальный ремонт{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Капитальный ремонт</h1>
+<div style="margin-top: 30px;">
+    <table class="table table-striped table-bordered">
+        <tbody>
+            <tr>
+                <td>04.2011</td>
+                <td>ООО "Монолит-Строй"</td>
+                <td>кап.ремонт системы электроснабжения</td>
+            </tr>
+            <tr>
+                <td>06.2011</td>
+                <td>ООО "Гармония"</td>
+                <td>кап.ремонт ограждения</td>
+            </tr>
+            <tr>
+                <td>08.2012</td>
+                <td>ООО "Мастер-Строй"</td>
+                <td>кап.ремонт по замене горючей отделки на путях эвакуации</td>
+            </tr>
+            <tr>
+                <td>07.2013</td>
+                <td>ООО "Прогресс"</td>
+                <td>кап.ремонт по замене сгораемой отделки на путях эвакуации</td>
+            </tr>
+            <tr>
+                <td>07.2013</td>
+                <td>ООО "Ремист"</td>
+                <td>кап.ремонт общестроительные и электромонтажные работы</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

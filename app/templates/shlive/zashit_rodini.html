@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Защитники Родины{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Защитники Родины</h1>
+<div style="margin-top: 30px;">
+    <h5>Урок Мужества, посвященный чествованию Героев Отечества в рамках проекта «Герои земли Самарской».</h5>
+    <p>Проект «Герои земли Самарской» реализуется на территории Самарской области Самарской областной общественной организацией «Герои Отечества».  Руководитель проекта «Герои земли Самарской» Герой Российской Федерации Игорь Валентинович Станкевич. Учителя и учащиеся Школы №70 участники проекта «Герои земли Самарской».</p>
+    <div style="max-width: 250px;">
+        <img src="{{ url_for('static', filename='img/zashit_rodini1.png') }}" alt="zashit_rodini1.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <br>
+    <p>19 мая 2017 года в музее школы с активами 5 - 9 классов встретился Виктор Петрович Талабаев, полковник в отставке, участник боевых действий в республике Афганистан, отец погибшего при исполнении воинского долга Героя Российской Федерации Виталия Талабаева.</p>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/zashit_rodini2.png') }}" alt="zashit_rodini2.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <br>
+    <p>По поручению депутата Государственной Думы Федерального Собрания Российской Федерации, председателя Самарской областной общественной организации «Герои Отечества» И. В. Станкевича школьному музею была передана его личная медаль «Золотая звезда».</p>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/zashit_rodini3.png') }}" alt="zashit_rodini3.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/zashit_rodini4.png') }}" alt="zashit_rodini4.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+</div>
+{% endblock %}

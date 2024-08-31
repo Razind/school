@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Кирсанова Светлана Михайловна{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Кирсанова Светлана Михайловна</h1>
+<div style="margin-top: 30px; display: flex; flex-direction: row-reverse; justify-content: space-between;">
+    <div style="max-width: 500px;">
+        <img src="{{ url_for('static', filename='img/kirsanova.png') }}" alt="kirsanova.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <div>
+        <h5>Ф.И.О.</h5>
+        <p>Кирсанова Светлана Михайловна</p>
+        <h5>Должность</h5>
+        <p>Учитель французского языка</p>
+        <h5>Предмет</h5>
+        <p>Французский язык</p>
+        <h5>Образовани</h5>
+        <p>Высшее. Куйбышевский государственный педагогический институт им. Куйбышева, факультет иностранных языков, учитель французского языка, 1986 год</p>
+        <h5>Награды</h5>
+        <p>1. Благодарственное письмо Администрации Ленинского района городского округа Самара, 2011</p>
+        <p>2. Благодарственное письмо Администрации городского округа Самара Департамента образования, 2012</p>
+        <p>3. Благодарственное письмо Администрации Ленинского района городского округа Самара, 2016</p>
+        <h5>Внеклассные мероприятия</h5>
+        <ul class="info-list">
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/rT5W9tLQDlY">Сказка "Белоснежка и 7 гномов"</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/QDtBki1e-UY">Спектакль "Белоснежка и 7 гномов"</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/UnUVf6jJ5G8">Кафе Франсе "Рандеву"</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.urok_franc') }}">Урок французского языка для начинающих</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/CJyNx-0zLpA">Инсценировка песни Petit Papa Noel</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://www.myshared.ru/slide/1384370/">Внеурочное занятие по французскому языку «День Епифании» или «Праздник королей» Учитель: Кирсанова С.М. Учащиеся: французские группы 3-а, 5-а, 6-а классов.</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://www.myshared.ru/slide/1384371/">Урок «Пасхальные традиции во Франции и в России» Учитель: Кирсанова С.М. Учащиеся: французская группа 3-а класса МБОУ Школа 70 г.о. Самара.</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://www.myshared.ru/slide/1384372/">Урок французского языка для начинающих «Путешествие во Францию. Французский завтрак» Учитель: Кирсанова С.М. Учащиеся 1-а и 1-б классов МБОУ Школа 70 г.о.</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://www.myshared.ru/slide/1384373/">Праздник французского алфавита Учитель: Кирсанова С.М. Участники: французская группа 2-б класса, ученики 6-а класса МБОУ Школа 70 г.о. Самара.</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=0hHakKM38EM">«Блинные праздники во Франции»</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=WSKshY3s5XA">Урок французского языка "Встречаем Новый год по французски" 2020г.</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://speakerdeck.com/school70/vstriechaiem-novyi-ghod-po-frantsuzski">Встречаем Новый год по-французски!</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://speakerdeck.com/school70/moi-mir-v-moiem-tvorchiestvie">Мой мир в моем творчестве</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://speakerdeck.com/school70/orghanizatsiia-vystavok">Организация выставок</a>
+            </li>
+        </ul>
+    </div>
+    
+
+</div>
+{% endblock %}

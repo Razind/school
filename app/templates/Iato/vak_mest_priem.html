@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Вакантные места для приема (перевода){% endblock %}
+
+{% block content %}
+<h1 class="text-center">Вакантные места для приема (перевода)</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Постановление 197  от 09.03.2016 "О закреплении территориальных участков за муниципальными образовательными учреждениями городского округа Самара для граждан, подлежащих обучению на ступенях начального общего, основного общего и среднего общего образования"</a>
+        </li>
+    </ul>
+    <br>
+    <h4>Дата обновления: 02.10.2023</h4>
+    <br>
+    <div class="">
+        <h3 class="mb-4">Информация о количестве вакантных мест для приема (перевода) за счет бюджетных ассигнований бюджета субъекта Российской Федерации</h2>
+        <h4 class="mb-3">1 - 4 классы</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Класс</th>
+                    <th scope="col">1а</th>
+                    <th scope="col">1б</th>
+                    <th scope="col">2а</th>
+                    <th scope="col">2б</th>
+                    <th scope="col">3а</th>
+                    <th scope="col">3б</th>
+                    <th scope="col">4а</th>
+                    <th scope="col">4б</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Количество вакантных мест</th>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="">
+        <h3 class="mb-4">Информация о количестве вакантных мест для приема (перевода) за счет бюджетных ассигнований бюджета субъекта Российской Федерации</h2>
+        <h4 class="mb-3">5 - 11 классы</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Класс</th>
+                    <th scope="col">5а</th>
+                    <th scope="col">5б</th>
+                    <th scope="col">6а</th>
+                    <th scope="col">6б</th>
+                    <th scope="col">7а</th>
+                    <th scope="col">7б</th>
+                    <th scope="col">8а</th>
+                    <th scope="col">8б</th>
+                    <th scope="col">9а</th>
+                    <th scope="col">9б</th>
+                    <th scope="col">10а</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Количество вакантных мест</th>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <h5>Количество вакантных мест для приема (перевода) за счет бюджетных ассигнований федерального бюджета - вакантных мест нет (по каждой образовательной программе).</h4>
+    <br>
+    <h5>Количество вакантных мест для приема (перевода) за счет бюджетных ассигнований местных бюджетов - вакантных мест нет (по каждой образовательной программе).    </h4>
+    <br>
+    <h5>Количество вакантных мест для приема (перевода) за счет средств физических и (или) юридических лиц — вакантных мест нет (по каждой образовательной программе).</h4>
+</div>
+{% endblock %}

@@ -1,0 +1,175 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Мероприятия{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Мероприятия</h1>
+<div style="margin-top: 30px;">
+    <div style="max-width: 500px;">
+        <img src="{{ url_for('static', filename='img/meropriyatiya1.png') }}" alt="meropriyatiya1.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <h5>Видеоэкскурсия "Две судьбы военных медсестер", по материалам школьного музея.</h5>
+    <ul class="info-list">
+        <li style="margin-left: 30px;">
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="https://www.youtube.com/watch?v=pwZ0PZOsAos">Видеоэкскурсия по материалам школьного музея</a>
+        </li>
+        <li style="margin-left: 30px;">
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="https://www.youtube.com/watch?v=pwZ0PZOsAos">Две судьбы военных медсестер</a>
+        </li>
+        <li style="margin-left: 30px;">
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="https://www.youtube.com/watch?v=pwZ0PZOsAos">Нина Ляпина и Зинаида Ладыженко</a>
+        </li>
+    </ul>
+    <h5>Новогоднее оформление школы  "Встречаем 2020 год - Год 75-летия Победы!"</h5>
+    <ul class="info-list" style="margin-left: 30px;">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="https://speakerdeck.com/school70/vstriechaiem-novyi-ghod">Встречаем новый год!</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="https://www.youtube.com/watch?v=f-gC1m-nZPo">Новогоднее оформление в стиле 1946-1950 годов</a>
+        </li>
+    </ul>
+    <h5>Французская весна</h5>
+    <ul class="info-list" style="margin-left: 30px;">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="http://www.myshared.ru/slide/1384370/">Внеурочное занятие по французскому языку «День Епифании» или «Праздник королей» Учитель: Кирсанова С.М. Учащиеся: французские группы 3-а, 5-а, 6-а классов.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="http://www.myshared.ru/slide/1384371/">Урок «Пасхальные традиции во Франции и в России» Учитель: Кирсанова С.М. Учащиеся: французская группа 3-а класса МБОУ Школа 70 г.о. Самара.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="http://www.myshared.ru/slide/1384372/">Урок французского языка для начинающих «Путешествие во Францию. Французский завтрак» Учитель: Кирсанова С.М. Учащиеся 1-а и 1-б классов МБОУ Школа 70 г.о.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="http://www.myshared.ru/slide/1384373/">Праздник французского алфавита Учитель: Кирсанова С.М. Участники: французская группа 2-б класса, ученики 6-а класса МБОУ Школа 70 г.о. Самара.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="https://www.youtube.com/watch?v=0hHakKM38EM">«Блинные праздники во Франции»</a>
+        </li>
+    </ul>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=WSKshY3s5XA">Открытый урок французского языка "Встречаем Новый год по французски"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.zima2021') }}">Региональный проект  #ПРОкачайЗИМУ   2021</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.gagarinsk_urok') }}">Гагаринский урок, урок посвящённый Дню Космонавтики 12 апреля.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/YLWEAP9RTTQ">Спортивный праздник "Будь здоров" 29 ноября 2019 г</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/MOKqS0Eg01A">"Лето - 2019" - видеодайджест о летнем отдыхе отряда "Улыбка" Школы 70 в лагере "Союз".</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/vaYO87UZhYg">Верность традициям. Площадь Славы. Пост №1.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://speakerdeck.com/school70/dostizhieniia-sport-2018-2019">Спортивные достижения учащихся в 2018-2019 учебном году</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/R2xxtb23E44">Смотр парадных расчетов "Марш Устинова" в номинации "Образовательные школы" 2018 год.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="?">Урок Мужества  "Герои Отечества", посвященный чествованию Героев Отечества в рамках проекта «Герои земли Самарской».</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="?">"ЧТО? ГДЕ? КОГДА?" увлекательный турнир знатоков</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="?">"НЕДЕЛЯ СЛОВЕСНОСТИ-2017"  путешествие в удивительный мир языка и литературы.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="?">Литературно-музыкальная гостиная "Не думай о секундах свысока...", посвящается Р.Рождественскому.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="?">"Эколого-спортивный праздник"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.prazd_mif') }}">Праздник МИФ в неделе точных наук</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="?">Спортивные успехи учащихся школы</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/CJyNx-0zLpA">Французское Рождество</a>
+        </li>
+    </ul>
+    <br>
+    <h4>Архив интересных мероприятий</h5>
+    <br>
+    <h5>Сказка на французском языке "Белоснежка и семь гномов"</h5>
+    <ul class="info-list" style="margin-left: 30px;">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="https://www.youtube.com/watch?v=QDtBki1e-UY">Спектакль «Белоснежка и семь гномов»</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="https://www.youtube.com/watch?v=rT5W9tLQDlY">Сказка "Белоснежка и семь гномов"</a>
+        </li>
+    </ul>
+    <h5>День иностранных языков</h5>
+    <ul class="info-list" style="margin-left: 30px;">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="#">Презентация 1</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 400;" class="nav-link" href="#">Презентация 2</a>
+        </li>
+    </ul>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="png">Встреча с чемпионом мира 2013 года по пауэрлифтингу, выпускником школы Андреем Коноваловым</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="?">23 февраля - день воинской славы России</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="?">Сказка "Репка" 2015 год</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/UnUVf6jJ5G8">Кафе Франсе "Рандеву 2014 год"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('iato.dosyg_deyat') }}">Досуговая деятельность</a>
+        </li>        
+    </ul>
+</div>
+{% endblock %}

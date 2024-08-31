@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Школьный театр{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Школьный литературный театр <br> "Художественное слово"</h1>
+<div style="margin-top: 30px;">
+    <div style="max-width: 851px;">
+        <img src="{{ url_for('static', filename='img/sh_teatr1-vmake.jpg') }}" alt="sh_teatr1-vmake.jpg" style="width: 100%;">
+    </div>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">ПРИКАЗ о создании школьного литературного театра «Художественное слово» МБОУ Школы №70 г.о.Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">ПОЛОЖЕНИЕ о школьном литературном театре «Художественное слово» МБОУ Школы №70 г.о.Самара</a>
+        </li>
+    </ul>
+    <br>
+    <h5 style="margin-bottom: 30px;">Масленница 2023. Артисты 8 "Б" класса.</h5>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/sh_teatr2.jpg') }}" alt="sh_teatr2.jpg" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/sh_teatr3.jpg') }}" alt="sh_teatr3.jpg" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/sh_teatr4.jpg') }}" alt="sh_teatr4.jpg" style="width: 100%; margin-bottom: 20px;">
+    </div>
+</div>
+{% endblock %}

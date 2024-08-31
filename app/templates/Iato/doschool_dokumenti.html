@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Документы дошкольного отделения{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Документы дошкольного отделения</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">О реорганизации муниципального бюджетного образовательного учреждения средней общеобразовательной  школы имени героя Советского  Союза А.В. Мельникова городского округа Самара в форме присоединения к нему муниципального бюджетного дошкольного образовательного учреждения детского сада № 164 городского округа </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Положение о дошкольных группах МБОУ Школы №70 г.о. Самара </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Приказ Министерства образования и науки РФ «Об утверждении федерального государственного образовательного стандарта дошкольного образования»</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Постановление Администрации городского округа Самара от 28.12.2018 г. № 1085 О размере платы взимаемой с родителей или законных  представителей </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Постановление Администрации городского округа Самара от 01.01.2022 г. Об изменении размера платы взимаемой с родителей или законных  представителей </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Положение «О порядке организации дежурных групп дошкольного отделения»</a>
+        </li>
+    </ul>
+    <br>
+    <h5>Результаты самообследования</h5>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Результаты самообследования 2023-2024 уч.год.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Результаты самообследования за 2022-2023 учебный год</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Результаты самообследования за 2019 год</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Руководство. Педагогический состав{% endblock %}
+
+{% block content %}
+<h1 class="text-center my-4">Руководство. Педагогический состав</h1>
+<div style="margin-top: 30px;">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Ф.И.О.</th>
+                <th scope="col">Должность</th>
+                <th scope="col">Контактный телефон</th>
+                <th scope="col">Электронная почта</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Косилова Елена Васильевна</td>
+                <td>Директор</td>
+                <td>8 (846) 338-19-16</td>
+                <td>so_sdo.school_70@samara.edu.ru</td>
+            </tr>
+            <tr>
+                <td>Панихина Татьяна Петровна</td>
+                <td>Заместитель по учебно-воспитательной работе</td>
+                <td>8 (846) 336-47-42</td>
+                <td>so_sdo.school_70@samara.edu.ru</td>
+            </tr>
+            <tr>
+                <td>Казарина Мария Дмитриевна</td>
+                <td>Заместитель по воспитательной работе</td>
+                <td>8 (846) 336-47-42</td>
+                <td>so_sdo.school_70@samara.edu.ru</td>
+            </tr>
+            <tr>
+                <td>Харитонова Ольга Александровна</td>
+                <td>Старший воспитатель (дошкольного отделения)</td>
+                <td>8 (846) 332-76-03</td>
+                <td>detki_164@mail.ru</td>
+            </tr>
+            <tr>
+                <td>Карпова Галина Владимировна</td>
+                <td>Завхоз</td>
+                <td>8 (846) 336-47-42</td>
+                <td>so_sdo.school_70@samara.edu.ru</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul class="info-list" style="margin-top: 30px;">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Сведения о педагогическом составе МБОУ Школа №70 г.о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Информация о прохождении курсовой подготовки работников МБОУ Школы № 70 г.о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">ПРАВИЛА внутреннего трудового распорядка для работников МБОУ Школа №70 г.о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon2">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">ПОЛОЖЕНИЕ  О распределении стимулирующей части фонда оплаты труда работников МБОУ Школы № 70 г.о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Положение  Об  оплате труда работников дошкольных отделения МБОУ Школы № 70 г.о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">ПОЛОЖЕНИЕ Об оплате труда работников МБОУ Школы № 70 г.о. Самара</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

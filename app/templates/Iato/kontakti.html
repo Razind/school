@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Контакты</h1>
+<div style="margin-top: 30px; display: grid; justify-items: center"">
+    <h5>Адрес: 443030, г. Самара, ул.Коммунистическая,7</h5>
+    <h5>Телефон: (846)336-47-42</h5>
+    <h5>эл.почта: so_sdo.school_70@samara.edu.ru</h5>
+    <br>
+    <div style="display: grid; justify-items: center">
+        <div style="max-width: 800px;">
+            <img src="{{ url_for('static', filename='img/3.jpg') }}" alt="3.jpg" style="width: 100%;">
+        </div>
+        <br>
+        <h5>Схема проезда:</h5>
+        <div style="max-width: 800px;">
+            <img src="{{ url_for('static', filename='img/kontakti.jpg') }}" alt="kontakti.jpg" style="width: 100%;">
+        </div>
+    </div>
+</div>
+{% endblock %}

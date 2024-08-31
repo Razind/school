@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}9 "А" класс{% endblock %}
+
+{% block content %}
+<h1 class="text-center">9 "А" класс</h1>
+<h1 class="text-center">Классный руководитель: Алабина Оксана Александровна</h1>
+<div style="margin-top: 30px;">
+    <h5>Знакомство со школьным музеем.</h5>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/dev_A1.png') }}" alt="dev_A1.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/dev_A2.png') }}" alt="dev_A2.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+</div>
+{% endblock %}

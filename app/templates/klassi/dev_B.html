@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}9 "Б" класс{% endblock %}
+
+{% block content %}
+<h1 class="text-center">9 "Б" класс</h1>
+<h1 class="text-center">Классный руководитель: Дементьева Валентина Александровна</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=MOKqS0Eg01A">"Лето это маленькая жизнь" - видеодайджест о летнем лагере.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=Q4MlmL3bpTY">"Мир без войны" . Выступление 2 "Б" класса.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=0MQTYPkXsaA">"Сегодня праздник у девчат..." Выступление 2 "Б" класса.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=NRGruECIZ_k">Наш любимый педагог</a>
+        </li>
+    </ul>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/dev_B1.png') }}" alt="dev_B1.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/dev_B2.png') }}" alt="dev_B2.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}О Тебе, моя Самара!{% endblock %}
+
+{% block content %}
+<h1 class="text-center">О Тебе, моя Самара!</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.uroki_istorii') }}">Уроки истории Самарского края</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://sgpress.ru/">"Самарская газета"</a>
+        </li>
+    </ul>
+    <div style="margin-top: 30px; margin-bottom: 30px;">
+        <iframe class="speakerdeck-iframe" frameborder="0" src="//speakerdeck.com/player/00fb67f457934f7f8f1a4a0b46d4cb94?title=false&amp;skipResize=true" title="Самарское знамя. Уроки истории Самарского края." allowfullscreen="true" style="border: 0px; background: padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 800px; height: 449.35px;"></iframe>
+    </div>
+    
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/o_tebe_sammara.jpg') }}" alt="o_tebe_sammara.jpg" style="width: 100%; margin-bottom: 20px;">
+        
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}10 "А" класс{% endblock %}
+
+{% block content %}
+<h1 class="text-center">10 "А" класс</h1>
+<h1 class="text-center">Классный руководитель: Козырева Ирина Евгеньевна</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=AsS6oOSQhNg">Праздник "День матери" 8 А класс.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=O3sl27qb5GY">7А класс. Поздравление любимых мам.</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

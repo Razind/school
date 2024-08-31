@@ -1,0 +1,305 @@
+@import url('fonts.css');
+
+body {
+    background-color: #eeeeee;
+    margin: 0 5vh;
+    text-decoration: none;
+    
+}
+
+.card-body {
+    min-height: 510px;
+}
+
+
+/* Шапка */
+.header {
+    position: sticky;
+    top: 0;
+    background: #eeeeeeea;
+    z-index: 1000;
+    transition: top 0.2s ease-in-out; /* Добавлен плавный переход */
+}
+
+.hidden-header {
+    top: -200px; /* Скрывает хедер, смещая его вверх */
+}
+
+.header__img {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 76px;
+}
+
+.header p {
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-item {
+    margin-left: 2.5rem;
+    
+}
+
+.nav-link  {
+    color: black; /* Начальный цвет ссылки */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+.nav-link:hover {
+    color: rgb(0, 102, 255); /* Цвет ссылки при наведении */
+}
+
+/* Основные стили */
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Медиазапрос для экранов меньше 768px */
+@media (max-width: 767.98px) {
+    .header-logo {
+        order: 2;
+        justify-content: flex-end; /* Перемещает логотип и текст вправо */
+    }
+
+    #sidebarToggle {
+        order: 1;
+    }
+
+    .nav {
+        display: none; /* Скрывает навигационное меню на маленьких экранах */
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .header p {
+        font-size: 12px;
+    }
+
+    .header__img {
+        width: 70px;
+        height: 56px;
+    }
+}
+
+/* Медиазапрос для экранов больше 768px */
+@media (min-width: 768px) {
+    #sidebarToggle {
+        display: none; /* Скрывает кнопку Sidebar на больших экранах */
+    }
+}
+
+/* Медиазапрос для экранов меньше 1245px и до 768px */
+@media (max-width: 1245px) {
+    .header a {
+        font-size: 12px;
+    }
+}
+
+/* Стили для слайдбара */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Начальное положение за границей экрана */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidebar.open {
+    left: 0; /* Позиция для открытого состояния */
+}
+
+/* page */
+.page {
+    background-color: #eeeeee;;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* content */
+.content {
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+    flex: 1 1 auto;
+}
+
+
+/* Карусель */
+.carousel__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Или 'contain' в зависимости от нужного результата */
+}
+
+.carousel-item {
+    width: 100%;
+    height: 300px; /* Базовая высота для маленьких экранов */
+    overflow: hidden; /* Для обрезки изображения */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+    z-index: 1;
+}
+
+.carousel h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 2.7rem;
+}
+
+.carousel p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+/* Медиа-запросы для адаптации высоты слайдера */
+
+@media (min-width: 768px) {
+    .carousel-item {
+        height: 400px; /* Высота для планшетов и малых экранов */
+    }
+
+    .card-body {
+        min-height: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item {
+        height: 500px; /* Высота для больших экранов */
+    }
+
+    .card-body {
+        min-height: 520px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-item {
+        height: 580px; /* Высота для очень больших экранов */
+    }
+
+    .card-body {
+        min-height: 550px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .carousel-item {
+        height: 750px; /* Высота для очень больших экранов */
+    }
+
+    .card-body {
+        min-height: 650px;
+    }
+}
+
+
+
+/* Подвал */  
+.ms-3 {
+    margin-right: 1rem;
+    margin-left: 0;
+}
+
+
+/* dropdown-menu */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #ffffffda; /* Начальный цвет фона */
+    transition: background-color 0.5s ease; /* Плавный переход фона */
+}
+.dropdown-item:hover {
+    background-color: rgb(0, 102, 255); /* Цвет фона при наведении */
+    color: #ffffffda; /* Цвет текста при наведении */
+}
+
+.dropdown-menu {
+    max-width: 350px;
+    max-height: 400px; /* Ограничение по высоте */
+    overflow-y: auto; /* Включение прокрутки по вертикали */
+}
+
+
+/* Стилизация полосы прокрутки */
+::-webkit-scrollbar {
+    width: 5px; /* Ширина вертикальной полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b1b1b1; /* Цвет бегунка */
+    border-radius: 5px; /* Закругление углов бегунка */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Цвет трека (фона полосы прокрутки) */
+}
+
+
+.btn-hover-red:hover {
+    background-color: red !important;
+    border-color: red !important;
+    color: white !important; /* Если хотите, чтобы текст на кнопке также изменял цвет */
+}
+
+
+
+

@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Проект "Здоровая школа"{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Здоровье - это искусство, а искусству надо учится ...</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Из опыта работы учителя начальных классов Кандаловой О.И.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Приказ о назначении ответственного лица за организацию работы по обеспечению безопасности учащихся в  Интернет</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Памятка для родителей о ПДД</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.bezop_internet') }}">Безопасный Интернет</a>
+        </li>
+    </ul>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/proekt_zdor_shc1.png') }}" alt="proekt_zdor_shc1.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/proekt_zdor_shc2.png') }}" alt="proekt_zdor_shc2.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/proekt_zdor_shc3.png') }}" alt="proekt_zdor_shc3.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    
+
+</div>
+{% endblock %}

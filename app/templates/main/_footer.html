@@ -1,0 +1,66 @@
+
+<div class="col mb-3">
+  <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+    <img class="header__img" src="{{ url_for('static', filename='img/header__image.png') }}" alt="header__image">
+  </a>
+  <p class="text-body-secondary">© 2024</p>
+<ul class="list-unstyled d-flex">
+    <li class="ms-3"><a class="link-body-emphasis" href="https://vk.com/school70samara63"><img src="{{ url_for('static', filename='img/vk-social-logotype-svgrepo-com.svg') }}" alt="VK"></a></li>
+    <li class="ms-3"><a class="link-body-emphasis" href="https://m.ok.ru/group/70000001106842"><img src="{{ url_for('static', filename='img/odnoklassniki-logo-svgrepo-com.svg') }}" alt="OK"></a></li>
+  </ul></div>
+
+
+
+
+
+<div class="col mb-3 text-end">
+  <h5>Сведения об образовательной организации</h5>
+  <ul class="nav flex-column">
+    <li class="nav-item mb-2"><a href="{{ url_for('iato.sooo') }}" class="nav-link p-0 ">Сведения об<br> образовательной<br> организации</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('iato.g_i_a') }}" class="nav-link p-0 ">Государственная<br> итоговая аттестация</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('iato.org_pit') }}" class="nav-link p-0 ">О питания</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('iato.o_pritm_v_perv_klas') }}" class="nav-link p-0 ">О приеме в первый<br> класс</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('iato.doschool') }}" class="nav-link p-0 ">Дошкольное отделение</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('iato.povish_kach_obraz') }}" class="nav-link p-0 ">Повышение качества<br> образования</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('iato.fynkc_gram') }}" class="nav-link p-0 ">Функциональная грамотность</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('iato.nastav') }}" class="nav-link p-0 ">Наставничество</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('iato.kontakti') }}" class="nav-link p-0 ">Контакты</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('iato.reg_na_gy') }}" class="nav-link p-0 ">Регистрация<br> на портале госуслуги</a></li>
+  </ul>
+</div>
+
+<div class="col mb-3 text-end">
+  <h5>Школьная жизнь</h5>
+  <ul class="nav flex-column">
+    <li class="nav-item mb-2"><a href="/" class="nav-link p-0 ">Главная</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Информация<br> для родителей</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Школьная газета</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Школьный театр</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Олимпиада</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Воспитательная<br> работа</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Профориентация</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Медиация</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Летний лагерь</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Профилактическая<br> работа</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Методическая<br> копилка</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">О тебе, моя самара!</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Безопасность</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">ШСК</a></li>
+  </ul>
+</div>
+
+<div class="col mb-3 text-end">
+  <h5>Учителя</h5>
+  <ul class="nav flex-column">
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Учителя школы</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Наш профсоюз</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Охрана труда</a></li>
+    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Национальные<br> проекты</a></li>
+  </ul>
+</div>
+
+<div class="col mb-3 text-end">
+  <a href="#" class="nav-link p-0 "><h5>Классы</h5></a>
+  <a href="{{ url_for('user.login') }}" class="nav-link p-0 "><h5>Вход для<br> сотрудников</h5></a>
+  <!--<a href="{{ url_for('user.register') }}" class="nav-link p-0 "><h5>Рег. для<br> сотрудников</h5></a>-->
+</div>

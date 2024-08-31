@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Фронтовые письма{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Фронтовые письма</h1>
+<div style="margin-top: 30px; display: grid; justify-items: center;">
+    <p>Эта работа посвящается замечательному человеку, ветерану Великой Отечественной войны, активно помогавшему открывать музей в нашей школе, Латышеву Ивану Васильевичу.</p>
+    <iframe width="774" height="500" style="margin-bottom: 30px;" src="https://www.youtube.com/embed/tPfcjYQTzlc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div style="margin-top: 30px; margin-bottom: 30px;">
+        <iframe class="speakerdeck-iframe" frameborder="0" src="//speakerdeck.com/player/202b96d6f38d4b48a0c8edbde0d5cffc?title=false&skipResize=true" title="Самарское знамя. Уроки истории Самарского края." allowfullscreen="true" style="border: 0px; background: padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 774px; height: 580px;"></iframe>
+    </div>
+    
+    
+
+</div>
+{% endblock %}

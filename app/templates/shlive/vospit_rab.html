@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Воспитательная работа{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Воспитательная работа</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Рабочая программа воспитания МБОУ Школа №70 (срок реализации 2021-2025 гг).</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">План воспитательной работы школы на 2023-2024 уч. год. (основное общее образование)</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">План воспитательной работы школы на 2023-2024 уч. год. (среднее общее образование)</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">План воспитательной работы школы на 2023-2024 уч. год. (начальное общее образование)</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Перекличка Постов №1</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Значимые мероприятия, акции, флешмобы Школы №70 г.о. Самара 2022-2023 уч.год (1-2 четверть)</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Значимые мероприятия, акции, флешмобы Школы №70 г.о. Самара 2021-2022 уч.год</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Масленица - праздник для жителей микрорайона.</a>
+        </li>
+    </ul>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/vospit_rab1.png') }}" alt="vospit_rab1.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+
+    
+    
+
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <h1 style="margin-bottom: 40px;">Создание новостей</h1>
+    <form method="post" enctype="multipart/form-data" class="form-control d-flex flex-column gap-4" id="newsForm" style="border-color: rgb(138, 138, 138);"> 
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.title.label }}
+            {{ form.title(class="form-control", placeholder="Заголовок", id="titleInput", style="border-color: rgb(138, 138, 138);") }}
+            {% for error in form.title.errors %}
+                <div class="alert alert-danger mt-2">{{ error }}</div>
+            {% endfor %}
+        </div>
+        <div class="form-group">
+            {{ form.content.label }}
+            {{ form.content(class="form-control", placeholder="Текст новости", style="border-color: rgb(138, 138, 138); min-height: 200px") }}
+            {% for error in form.content.errors %}
+                <div class="alert alert-danger mt-2">{{ error }}</div>
+            {% endfor %}
+        </div>
+        <div class="form-group">
+            {{ form.image.label }}
+            {{ form.image(class="form-control", style="border-color: rgb(138, 138, 138);") }}
+            {% for error in form.image.errors %}
+                <div class="alert alert-danger mt-2">{{ error }}</div>
+            {% endfor %}
+        </div>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-success") }}
+        </div>
+    </form>
+
+    
+{% endblock %}

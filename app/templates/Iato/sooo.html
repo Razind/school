@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Сведения об образовательной организации{% endblock %}
+
+{% block content %}
+</style>
+<h1>Сведения об образовательной организации</h1>
+<ul class="info-list">
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.osn_sved') }}">Основные сведения</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.soy') }}">Структура и органы управления образовательной организацией</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.rips') }}">Руководство и педагогический состав</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon2">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.doc') }}">Документы</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon2">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.obr') }}">Образование</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon2">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.obraz_stand') }}">Образовательные стандарты</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon2">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.fin_xoz_deat') }}">Финансово-хозяйственная деятельность</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon2">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.mat_tex_obespech') }}">Материально-техническое обеспечение и оснащённость образовательного процесса</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon2">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.plat_obraz_ysl') }}">Платные образовательные услуги</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon2">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.vak_mest_priem') }}">Вакантные места для приёма (перевода) обучающихся</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon2">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.stipendii') }}">Стипендии и меры поддержки обучающихся</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.protiv_kor') }}">Противодействие коррупции</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.dostyp_sred') }}">Доступная среда</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="https://drive.google.com/file/d/148SpaiZsCcknaAvHDOOszp3NCAiz5XNa/view?usp=drive_link">Электронные образовательные ресурсы, к которым обеспечивается доступ обучающихся.</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="#">Порядок текущего контроля успеваемости и промежуточной аттестации обучающихся.</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="#">Программа повышения объективности проведения всероссийских проверочных работ в МБОУ Школа №70 на 2021-2022 уч.г.</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="#">Международное сотрудничество - МБОУ Школа №70 г.о. Самара не сотрудничает с международными организациями.</a>
+    </li>
+</ul>
+<div style="max-width: 851px;">
+    <img src="{{ url_for('static', filename='img/3.jpg') }}" alt="3.jpg" style="width: 100%;">
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Профориентация{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Профориентация и самоопределение обучающихся</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Памятка для родителей "Как  ребёнку выбрать профессию"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Справочный материал об условиях поступления в военные образовательные организации высшего образования Министерства Обороны РФ на 2022 год.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Управление МВД России по г. Самаре  осуществляет набор по очной форме обучения в образовательные организации системы МВД России.</a>
+        </li>
+    </ul>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/profor1.jpg') }}" alt="profor1.jpg" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/profor2.jpg') }}" alt="profor2.jpg" style="width: 100%; margin-bottom: 20px;">
+    </div>
+
+    
+
+</div>
+{% endblock %}

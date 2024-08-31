@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Математика Информатика Физика{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Математика Информатика Физика</h1>
+<div style="margin-top: 30px;">
+    <div style="max-width: 800px;">
+        <img src="{{ url_for('static', filename='img/prazd_mif.png') }}" alt="prazd_mif.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Сценарий праздника МИФ</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

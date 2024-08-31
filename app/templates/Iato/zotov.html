@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Зотов Фёдор Дмитриевич{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Зотов Фёдор Дмитриевич</h1>
+<h1 class="text-center">директор средней школы №70 <br>города Куйбышева с 1959 г. по 1963 г.</h1>
+<div style="display: grid; justify-items: center; margin-top: 30px;">
+    <div style="max-width: 600px; display: grid; justify-items: center; align-items: center;">
+        <img src="{{ url_for('static', filename='img/zotov1.jpg') }}" alt="zotov1.jpg" style="width: 100%;">
+        <img  src="{{ url_for('static', filename='img/zotov2.bmp') }}" alt="zotov2.bmp" style="width: 50%; margin-top: 30px;">
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Барган Надежда Юрьевна{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Барган Надежда Юрьевна</h1>
+<div style="margin-top: 30px; display: flex; flex-direction: row-reverse; justify-content: space-between;">
+    <div style="max-width: 450px;">
+        <img src="{{ url_for('static', filename='img/bargan.png') }}" alt="bargan.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <div style="margin-left: 0px;">
+        <h5>Ф.И.О.</h5>
+        <p>Барган Надежда Юрьевна</p>
+        <h5>Должность</h5>
+        <p>Учитель музыки</p>
+        <h5>Предмет</h5>
+        <p>Музыка</p>
+        <h5>Образовани</h5>
+        <p>Высшее</p>
+        <h5>Личные достижения</h5>
+        <p>1. Диплом участника VII международной акции "Читаем детям о войне"</p>
+        <p>2. Благодарственное письмо Администрации Ленинского района городского округа Самара</p>
+        <p>3. Благодарственное письмо за участие в работе жюри Открытых Ломоносовских чтений "Мои личные открытия"</p>
+    </div>
+    
+
+</div>
+{% endblock %}

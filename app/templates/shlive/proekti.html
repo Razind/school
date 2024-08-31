@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Проекты{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Проекты</h1>
+<div style="margin-top: 30px;">
+    <p>К 75-летию Победы <a href="https://speakerdeck.com/player/c96843cc7c314fa783e1ab281a322aa2?slide=3&title=false&skipResize=true">КНИГА ПАМЯТИ</a> - посвящается нашим родным - героям Великой Отечественной войны 1941-1945 гг.</p>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.proekt') }}">Мероприятия в рамках сетевого проекта "Школа года 2017: будущее начинается сегодня" Фестиваль "Дни науки и техники".</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.urok_franc') }}">Урок французского языка для начинающих "Путешествие во Францию"</a>
+        </li>
+    </ul>
+    <p>Урок французского языка для начинающих. Учитель - Кирсанова С.М.</p>
+    <br>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.front_pisma') }}">Фронтовые письма</a>
+        </li>
+    </ul>
+    <p>Посвящается ветерану Великой Отечественной войны, активно помогавшему открывать музей в нашей школе, Латышеву Ивану Васильевичу. </p>
+    <br>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.kniga_pamyati') }}">Книга памяти</a>
+        </li>
+    </ul>
+    <p>В создании КНИГИ ПАМЯТИ принимали участие ученики, учителя и сотрудники нашей школы. </p>
+    <br>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Особенности преподавания иностранного языка учащимся с неродным русским языком в системе мультикультурного образования»</a>
+        </li>
+    </ul>
+    <p>Кафедра иностранных языков Самарского государственного университета с 24 по 26 марта 2014 года организовала и провела Международный культурно-образовательный форум «Межкультурное взаимодействие в современном мире».  В работе форума приняли участие известные отечественные и зарубежные эксперты в области преподавания английского языка и межкультурной коммуникации, преподаватели вузов и школ. Учитель МБОУ СОШ № 70 Панихина Т. П. выступала на форуме  с темой «Особенности преподавания иностранного языка учащимся с неродным русским языком в системе мультикультурного образования»</p>
+
+
+
+
+</div>
+{% endblock %}

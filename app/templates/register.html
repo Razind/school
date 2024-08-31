@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register</h1>
+      <form method="POST" action="{{ url_for('user.register') }}">
+        {{ form.hidden_tag() }}
+        <div>
+          {{ form.login.label }}<br>
+          {{ form.login(size=32) }}
+        </div>
+        <div>
+          {{ form.password.label }}<br>
+          {{ form.password(size=32) }}
+        </div>
+        <div>
+          {{ form.submit() }}
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

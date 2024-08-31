@@ -1,0 +1,103 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Методическая копилка{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Методическая копилка</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <h5>Формирование понятийного мышления на уроках в условиях реализации ФГОС</h5>
+        <li style="margin-left: 30px">
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=k4NByKoFsdc">Формирование понятийного мышления на уроках</a>
+        </li>
+        <li style="margin-left: 30px">
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=UF9w34O3vN4">Рассказ о писателе</a>
+        </li>
+        <li style="margin-left: 30px">
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=xguCiPylzqA">Урок во 2 классе</a>
+        </li>
+        <br>
+        <h5>Сказка на французском языке "Белоснежка и 7 гномов"</h5>
+        <li style="margin-left: 30px;">
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=QDtBki1e-UY">Спектакль «Белоснежка и семь гномов»</a>
+        </li>
+        <li style="margin-left: 30px;">
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=rT5W9tLQDlY">Сказка "Белоснежка и семь гномов"</a>
+        </li>
+        <br>
+        <h5>День иностранных языков. Французская весна.</h5>
+        <li style="margin-left: 30px;">
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="?">Презентация 1</a>
+        </li>
+        <li style="margin-left: 30px;">
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="?">Презентация 2</a>
+        </li>
+        <br>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=votFrl_N4P4">День Конституции - уроки истории, проекты, квест-игра. Методическая копилка учителя истории МБОУ Школы №70 Корнеевой О. П.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=9l0dq4GNZoU">Методическая копилка учителя истории Школы №70 г.о. Самара Корнеевой О. П.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/q44EFiGEEh0">Методическая копилка учителя истории Школы 70 Корнеевой О.П. Часть 2. Внеурочные мероприятия.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/Nz3-cScBigU">Методическая копилка учителя истории Школы 70 Корнеевой О. П. Часть 3. Уроки.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/L3_14hXdqdk">Методическая копилка учителя истории Школы 70 Корнеевой О.П. Блокада. Урок Памяти в 6 А классе.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=UnUVf6jJ5G8">Кафе Франсе "Рандеву"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.urok_franc') }}">Урок французского языка для начинающих</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=WSKshY3s5XA">Урок французского языка "Встречаем Новый год по французски" 2020г.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.proekti') }}">Проекты</a>
+        </li>
+        <br>
+        <h5>Методические разработки учителя Кандаловой О. И.</h5>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://www.metod-kopilka.ru/programma-vneurochnoy-deyatelnosti-dobrota-spaset-mir-klass-59872.html">Metod-kopilka.ru // Методическая разработка: Программа внеурочной деятельности «Доброта спасет мир» (1-4 класс)</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://infourok.ru/rabochaya-programma-vneurochnoy-deyatelnosti-dobrota-spaset-mir-300878.html">Infourok.ru // Методическая разработка: Программа внеурочной деятельности «Доброта спасет мир» (1-4 класс)</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://www.metod-kopilka.ru/konspekt-uroka-po-mftemftike-na-temy-reshenie-zadach-na-vstrechnoe-dvizhenie-umnozhenie-mnogoznachnih-chisel-okanchivayuschihsya-59871.html">Metod-kopilka.ru // Конспект урока по математике на тему «Решение задач на встречное движение. Умножение многозначных чисел, оканчивающихся нулями»</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://infourok.ru/konspekt-uroka-pravopisanie-padezhnih-okonchaniy-imen-suschestvitelnih-574317.html">Infourok.ru // Конспект урока по русскому языку на тему «Правописание падежных окончаний имен существительных» (4 класс)</a>
+        </li>
+    </ul>
+    
+    
+
+</div>
+{% endblock %}

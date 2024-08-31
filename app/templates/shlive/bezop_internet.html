@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Безопасный Интернет{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Безопасный Интернет</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Приказ о назначении ответственного лица за организацию работы по обеспечению безопасности учащихся в  Интернет</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Памятка родителям по обеспечению безопасности детей при работе в Интернет</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Буклет "Правила поведения в сети Интернет"</a>
+        </li>
+    </ul>
+    <br>
+    <h5>Полезные ссылки</h5>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://detionline.com/internet-proiectytraininK-aids">http://detionline.com/internet-proiectytraininK-aids</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://interneshka.org/safer-internet-lessons/53537/">http://interneshka.org/safer-internet-lessons/53537/</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://www.ligainternet.ru/encyclopedia-of-security/">http://www.ligainternet.ru/encyclopedia-of-security/</a>
+        </li>
+    </ul>
+    
+    
+
+</div>
+{% endblock %}

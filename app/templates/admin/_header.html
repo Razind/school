@@ -1,0 +1,42 @@
+<!-- Включение счетчика вопросов в header.html -->
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+  <div class="col-md-3 mb-2 mb-md-0">
+    <a href="{{ url_for('post.admin_news') }}" class="d-inline-flex link-body-emphasis text-decoration-none">
+      <h2>Админ панель</h2>
+    </a>
+  </div>
+
+  <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+    <li class="nav-item dropdown">
+        <a class="nav-link px-2" href="#" id="teachersMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Новости
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="teachersMenu">
+            <li><a class="dropdown-item" style="margin-bottom: 5px;" href="{{ url_for('post.create') }}">Создание новостей</a></li>
+            <li><a class="dropdown-item" style="margin-bottom: 5px;" href="{{ url_for('post.admin_news') }}">Список новостей</a></li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link px-2" href="{{ url_for('question.list_questions') }}" id="mainMenu" role="button">
+        Вопросы
+        {% if num_questions %}
+                <span class="badge bg-danger">{{ num_questions }}</span>
+            {% endif %}
+      </a>
+  </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link px-2" href="#" id="teachersMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Учителя
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="teachersMenu">
+          <li><a class="dropdown-item" href="#">...</a></li>
+          <li><a class="dropdown-item" href="#">...</a></li>
+      </ul>
+  </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link px-2" href="{{ url_for('user.logout') }}" id="mainMenu" role="button">
+            Выход
+        </a>
+    </li>
+  </ul>
+</header>

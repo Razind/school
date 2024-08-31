@@ -1,0 +1,35 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}Вопросы{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Все вопросы</h1>
+
+    {% if questions %}
+        {% for question in questions %}
+            <div class="card mb-3">
+                <div style="flex: 1 1 auto; padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x); color: var(--bs-card-color);">
+                    <h5>ФИО</h5>
+                    <p class="card-title">{{ question.full_name }}</p>
+                    <h5>Почта</h5>
+                    <p class="card-title">{{ question.email }}</p>
+                    <h5>Вопрос</h5>
+                    <p class="card-text">{{ question.question }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Дата создания: {{ question.date_created.strftime('%Y-%m-%d %H:%M:%S') }}</small>
+                        <form action="{{ url_for('question.delete_question', id=question.id) }}" method="POST">
+                            <button type="submit" class="btn btn-danger">Вопрос решен</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p class="text-center">Нет вопросов для отображения.</p>
+    {% endif %}
+</div>
+
+
+<script src="{{ url_for('static', filename='js/libs/bootstrap.min.js') }}"></script>
+{% endblock %}

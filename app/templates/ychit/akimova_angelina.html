@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Акимова Ангелина Васильевна{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Акимова Ангелина Васильевна</h1>
+<div style="margin-top: 30px; display: flex; flex-direction: row-reverse; justify-content: space-between;">
+    <div style="max-width: 500px;">
+        <img src="{{ url_for('static', filename='img/akimova.png') }}" alt="akimova.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <div>
+        <h5>Ф.И.О.</h5>
+        <p>Акимова Ангелина Васильевна</p>
+        <h5>Должность</h5>
+        <p>Учитель начальных классов</p>
+        <h5>Предмет</h5>
+        <p>Начальные классы</p>
+        <h5>Образовани</h5>
+        <p>Средне-специальное, высшее (3 курс)</p>
+        <h5>Педагогический стаж</h5>
+        <p>3 года</p>
+    </div>
+    
+
+</div>
+{% endblock %}

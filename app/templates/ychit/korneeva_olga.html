@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Корнеева Ольга Петровна{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Корнеева Ольга Петровна</h1>
+<div style="margin-top: 30px; display: flex; flex-direction: row-reverse; justify-content: space-between;">
+    <div style="max-width: 500px;">
+        <img src="{{ url_for('static', filename='img/korneeva.png') }}" alt="korneeva.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <div>
+        <h5>Ф.И.О.</h5>
+        <p>Корнеева Ольга Петровна</p>
+        <h5>Должность</h5>
+        <p>Учитель </p>
+        <h5>Предмет</h5>
+        <p>История и обществознание</p>
+        <h5>Образовани</h5>
+        <p>Высшее, Поволжская государственная социально-гуманитарная академия, исторический факультет.</p>
+        <h5>Категория</h5>
+        <p>Высшая категория</p>
+        <h5>Награды</h5>
+        <p>Почетный работник среднего профессионального образования Российской Федерации</p>
+        <h5>Личные достижения</h5>
+        <p>участие в городском конкурсе "Лучший учитель по предмету". Секция "Урок биологии по ФГОС"</p>
+        <h5>Публикации</h5>
+        <ul class="info-list">
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://vk.link/teacher_history_soc">Сайт учителя</a>
+            </li>
+        </ul>
+        <h5>Внеклассные мероприятия</h5>
+        <p>1. правовая викторина 2 «А»</p>
+        <p>2. правовая викторина 6 «А»</p>
+        <p>3. урок в музее «Символы России», 6 класс</p>
+        <p>4. урок в музее «Права и обязанности граждан РФ», 8 класс</p>
+        <p>5. квест в 8 «А» и 10 «А» классах</p>
+        <p>6. участие учащихся в выставке рисунков «Права человека», «Конституция РФ».</p>
+        <ul class="info-list">
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="pdf">Сценарий внеклассного мероприятия</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=votFrl_N4P4">День Конституции - уроки истории, проекты, квест-игра.</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=GJcFyUgblZE">Экологический ролик для фестиваля "СОХРАНИМ СВОЮ ПЛАНЕТУ"</a>
+            </li>
+        </ul>
+        <h5>Методическая копилка учителя истории и обществознания Корнеевой Ольги Петровны</h5>
+        <ul class="info-list">
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=9l0dq4GNZoU">Методическая копилка учителя истории Школы №70 г.о. Самара Корнеевой О. П.</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/q44EFiGEEh0">Методическая копилка учителя истории Школы 70 Корнеевой О.П. Часть 2. Внеурочные мероприятия.</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/Nz3-cScBigU">Методическая копилка учителя истории Школы 70 Корнеевой О. П. Часть 3. Уроки.</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/L3_14hXdqdk">Методическая копилка учителя истории Школы 70 Корнеевой О.П. Блокада. Урок Памяти в 6 А классе.</a>
+            </li>
+        </ul>
+    </div>
+    
+
+</div>
+{% endblock %}

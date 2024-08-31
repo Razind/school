@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Школьная библиотека{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Школьная библиотека</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Приказ Министерства просвещения Российской Федерации от 20.05.2020 № 254 "Об утверждении федерального перечня учебников, допущенных к использованию при реализации имеющих государственную аккредитацию образовательных программ начального общего, основного общего, среднего общего образования организациями, осуществляющими образовательную деятельность"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Приказ Министерства просвещения Российской Федерации от 23.12.2020 № 766 "О внесении изменений в федеральный перечень учебников, допущенных к использованию при реализации имеющих государственную аккредитацию образовательных программ начального общего, основного общего, среднего общего образования организациями, осуществляющими образовательную деятельность, утвержденный приказом Министерства просвещения Российской Федерации от 20 мая 2020 г. № 254"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Приказ Министерства просвещения Российской Федерации № 345 от 28.12.2018 года О ФЕДЕРАЛЬНОМ ПЕРЕЧНЕ УЧЕБНИКОВ, РЕКОМЕНДУЕМЫХ К ИСПОЛЬЗОВАНИЮ ПРИ РЕАЛИЗАЦИИ ИМЕЮЩИХ ГОСУДАРСТВЕННУЮ АККРЕДИТАЦИЮ ОБРАЗОВАТЕЛЬНЫХ ПРОГРАММ НАЧАЛЬНОГО ОБЩЕГО, ОСНОВНОГО ОБЩЕГО, СРЕДНЕГО ОБЩЕГО ОБРАЗОВАНИЯ</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">ПОСТАНОВЛЕНИЕ от 25 июля 2007 г. № 114 «О мерах по обеспечению учащихся муниципальных и государственных образовательных учреждений самарской области учебными изданиями, приобретаемыми за счет средств областного бюджета»</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">План мероприятий по сохранности библиотечного фонда МБОУ Школы № 70 г. о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Приказ о назначении ответственного за обеспечение учащихся учебными изданиями на 2020-2021 уч.год</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Положение об использовании и сохранении библиотечного фонда МБОУ Школой № 70 г. о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Положение о библиотеке</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Нормативно законодательная база обеспечения учебниками учащихся</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Положение об обеспечении учебниками из школьного библиотечного фонда</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Федеральный перечень учебников, рекомендуемых к использованию при реализации имеющих государственную аккредитацию образовательных программ начального общего, основного общего, среднего общего образования</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Перечень учебной литературы на 2021-2022 уч .год</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Поступление учебной литературы в 2021 году</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Поступление учебной литературы в 2020 году</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Поступление учебников в 2019 году</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Уровень обеспеченности учащихся МБОУ Школы №70 в 2021-2022 учебном году учебниками на основании федерального перечня из библиотечного фонда</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Поступление учебников в 2017-2018 г.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Поступление учебников 2014-2016 г.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Накладная на поступление учебников в 2018 году</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Накладная о поступление учебников в 2017 году издательство "Просвещение"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Накладная о поступление учебников в 2017 году издательство "Дрофа"</a>
+        </li>
+        
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Фестиваль "Дни науки и техники"{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Фестиваль "Дни науки и техники"</h1>
+<div style="margin-top: 30px; display: grid; justify-content: center;">
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/proekt1.png') }}" alt="proekt1.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/proekt2.png') }}" alt="proekt2.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/proekt3.png') }}" alt="proekt3.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/proekt4.png') }}" alt="proekt4.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/proekt5.png') }}" alt="proekt5.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/proekt6.png') }}" alt="proekt6.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/proekt7.png') }}" alt="proekt7.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/proekt8.png') }}" alt="proekt8.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    
+    
+
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Уроки мужества{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Уроки мужества</h1>
+<div style="margin-top: 30px;">
+    <p>«Нет в России семьи такой, где не памятен свой герой…» - экспозиция, посвященная родственникам учащихся нашей школы. На витрине представлены грамоты, юбилейные знаки «50 лет 31 Армии». На знаке перечислены города – путь 31 Армии – этот путь прошел прадедушка нашей выпускницы Архангельской Надежды.  И ещё очень важный и ценный экспонат это - странички военного дневника-песенника, переданные в музей правнучкой ветерана Великой Отечественной войны. Этот дневник с прадедушкой прошел всю войну.</p>
+    <div style="display: grid; justify-items: center;">
+        <div style="margin-top: 30px; margin-bottom: 30px;">
+            <iframe class="speakerdeck-iframe" frameborder="0" src="//speakerdeck.com/player/202b96d6f38d4b48a0c8edbde0d5cffc?title=false&skipResize=true" title="Самарское знамя. Уроки истории Самарского края." allowfullscreen="true" style="border: 0px; background: padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 774px; height: 580px;"></iframe>
+        </div>
+        <iframe width="774" height="500" style="margin-bottom: 30px;" src="https://www.youtube.com/embed/tPfcjYQTzlc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <div style="max-width: 774px;">
+            <img src="{{ url_for('static', filename='img/uroki_musz1.png') }}" alt="uroki_musz1.png" style="width: 100%; margin-bottom: 20px;">
+        </div>
+    </div>
+</div>
+{% endblock %}

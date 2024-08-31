@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Стипендии и иные виды материальной поддержки{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Стипендии и иные виды материальной поддержки</h1>
+<div style="margin-top: 30px;">
+    <h4 class="text-center">АДМИНИСТРАЦИЯ ГОРОДСКОГО ОКРУГА САМАРА</h4>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">ПОСТАНОВЛЕНИЕ Об утверждении Порядка предоставления бесплатного питания отдельным категориям обучающихся муниципальных общеобразовательных учреждений городского округа Самара (с изменениями на 4 августа 2016 года). </a>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400">Для 82 учащихся  1-11 классов организовано одноразовое  горячее питание (завтрак) и для  3-х обучающихся в течение учебного дня организовано двухразовое  горячее питание (завтрак, обед) за счет средств муниципального и регионального бюджетов. Все категории  обучающихся в период обучения в школе имеют право на бесплатное медицинское обслуживание. Все обучающиеся в период обучения в школе обеспечиваются учебниками. </p>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400">Уставом МБОУ Школа № 70 г.о. Самара наличие и  предоставление стипендий, наличие общежития, интерната и иных видов материальной поддержки обучающихся не предусмотрено.</p>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Меры социальной поддержки учащихся</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Информация о кассах, в которых обучаются дети мигранты.</a>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400">Для обучающихся детей, не имеющих гражданства РФ, проводятся мероприятия по социальной адаптации</p>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">План мероприятий про гармонизации межэтнических взаимодействий.</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

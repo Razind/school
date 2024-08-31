@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Безопасность{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Безопасность</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Правила безопасного поведения детей на железнодорожном транспорте</a>
+        </li>
+    </ul>
+    <br>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/doschool_bezop1.png') }}" alt="doschool_bezop1.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/doschool_bezop2.png') }}" alt="doschool_bezop2.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/doschool_bezop3.png') }}" alt="doschool_bezop3.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/doschool_bezop4.png') }}" alt="doschool_bezop4.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/doschool_bezop5.png') }}" alt="doschool_bezop5.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/doschool_bezop6.png') }}" alt="doschool_bezop6.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/doschool_bezop7.png') }}" alt="doschool_bezop7.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/doschool_bezop8.png') }}" alt="doschool_bezop8.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    
+    
+
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Казарина Мария Дмитриевна{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Казарина Мария Дмитриевна</h1>
+<div style="margin-top: 30px; display: flex; flex-direction: row-reverse; justify-content: space-between;">
+    <div style="max-width: 400px;">
+        <img src="{{ url_for('static', filename='img/kazarina_maria.png') }}" alt="kazarina_maria.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <div>
+        <h5>Ф.И.О.</h5>
+        <p>Казарина Мария Дмитриевна</p>
+        <h5>Должность</h5>
+        <p>Учитель начальных классов, зам.директора по ВР.</p>
+        <h5>Предмет</h5>
+        <p>Начальные классы, английский язык</p>
+        <h5>Образовани</h5>
+        <p>Высшее</p>
+    </div>
+</div>
+{% endblock %}

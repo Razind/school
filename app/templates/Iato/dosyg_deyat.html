@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Досуговая деятельность{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Досуговая деятельность</h1>
+<div style="margin-top: 30px;">
+    <p><a href="https://zeroplus.tv/movie">Онлайн–кинотеатр «Ноль Плюс»</a> создан для детей, подростков, молодежи, родителей, педагогов. Платформа собирала в себе сотни фильмов и сериалов – анимационных, игровых, документальных, научно-популярных.</p>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Интернет-ресурсы, направленные на ознакомление с российскими и мировыми культурными ценностями.</a>
+        </li>
+    </ul>
+    <br>
+    <h5>Музеи и галереи</h5>
+    <p>1. <a href="https://www.hermitagemuseum.org/">Государственный Эрмитаж</a></p>
+    <p>2. <a href="http://www.rusmuseum.ru/">Государственный Русский музей</a></p>
+    <p>3. <a href="https://www.tretyakovgallery.ru/">Третьяковская галерея</a></p>
+    <p>4. <a href="http://www.alabin.ru/virtualnye-ekskursii/">Историко-краеведческий музей им. П.В. Алабина запускает на своих официальных онлайн-площадках серию виртуальных экскурсий по основной экспозиции.</a> Экскурсии в нём – отличный способ почувствовать атмосферу музея, ознакомиться с экспозицией основного здания и его филиалов, посетить уже прошедшие выставки и узнать больше о Самарском крае.</p>
+    <p>5. <a href="http://kray63.ru/virtualnye-ekskursii/samara-kosmicheskaya/virtualnaya-ekskursiya-po-muzeyu-samara-kosmicheskaya">Музей «Самара Космическая» сделал онлайн-экскурсию по музею.</a> Во время этого тура можно посмотреть все залы. Экскурсия доступна как в текстовом, так и в аудио формате.</p>
+    <p>6. <a href="http://mbousch70.ru/Myzey/muzei_shkol_samary.pdf">Виртуальные экскурсии по школьным музеям городского округа Самара.</a></p>
+    <br>
+    <h5>Театры</h5>
+    <p>1. <a href="https://www.bolshoi.ru/about/relays">Большой театр (Москва)</a></p>
+    <p>2. <a href="https://onlineteatr.com/afisha/timetable">Театр им. Маяковского, Театр им. Вахтангова, Театр Сатиры, Театр ЛЕНКОМ</a></p>
+    <p>3. <a href="https://moscowtyz.ru/">Московский театр юного зрителя</a></p>
+    <p>4. <a href="http://www.opera-samara.net/">Самарский театр оперы и балета начинает онлайн-трансляцию спектаклей и концертов.</a></p>
+
+
+
+
+</div>
+{% endblock %}

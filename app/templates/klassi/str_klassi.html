@@ -1,0 +1,148 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Классы школы{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Классы школы</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list list-class">
+        <li class="li-class">
+            <a class="nav-link" href="">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">1 "A" Класс</span>
+            </a>
+        </li>               
+        <li class="li-class">
+            <a class="nav-link" href="">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">1 "Б" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">2 "A" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">2 "Б" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.tret_A') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">3 "A" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">3 "Б" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.chtr_A') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">4 "A" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.chtr_B') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">4 "Б" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.pyat_A') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">5 "A" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.pyat_B') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">5 "Б" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.shest_A') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">6 "A" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.shest_B') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">6 "Б" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.sed_A') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">7 "A" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.sed_B') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">7 "Б" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.vos_A') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">8 "A" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">8 "Б" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.dev_A') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">9 "A" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.dev_B') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">9 "Б" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="{{ url_for('klassi.des_A') }}">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">10 "A" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">10 "Б" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">11 "A" Класс</span>
+            </a>
+        </li>
+        <li class="li-class">
+            <a class="nav-link" href="">
+                <img class="a-class" style="margin: 0 auto;" src="{{ url_for('static', filename='img/icons8-k.png') }}" alt="icon1">
+                <span style="display: block; margin-top: 8px;">11 "Б" Класс</span>
+            </a>
+        </li>
+        
+    </ul>
+    
+    
+
+</div>
+{% endblock %}

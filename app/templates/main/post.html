@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/post.css') }}">
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content | nl2br | safe }}</p>
+    {% if post.image %}
+    <img src="{{ url_for('static', filename='upload/' + post.image) }}" alt="" class="responsive-image">
+    {% endif %}
+    <div class="date-container">
+      <small>{{ post.date_posted.strftime('%d %B %Y, %H:%M') }}</small>
+    </div>
+    <br>
+    <a href="{{ url_for('post.all') }}" class="btn btn-secondary">Назад</a>
+</div>
+{% endblock %}

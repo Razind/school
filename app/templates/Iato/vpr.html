@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}ВПР{% endblock %}
+
+{% block content %}
+<h1 class="text-center">ВПР</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Письмо Рособрнадзора от 12.02.2021 № 14-15 о проведении ВПР (в нем же приказ № 119 от 11.02.2021 «О проведении Федеральной службой по надзору в сфере образования и науки мониторинга качества подготовки обучающихся общеобразовательных организаций в форме всероссийских проверочных работ в 2021 году»).</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Распоряжение по ВПР 223-р МОиН СО</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Приказ ВПР 2021 Самарское управление</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Рекомендации по объективности проведения ВПР</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://fioco.ru/obraztsi_i_opisaniya_vpr_2021">Демонстрационные версии ВПР по всем предметам</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

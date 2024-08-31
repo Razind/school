@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/libs/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/header__image.png') }}" type="image/png">
+
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+<header class="header">{% include 'main/_header.html' %}</header>
+
+<div class="page">
+    <main class="content">{% block content %}{% endblock %}</main>
+    <!--
+    <div style="margin-top: 30px;">
+        <h5 class="text-center">Перечень онлайн-платформ для дистанционного обучения, используемых образовательной организацией.</h5>
+        <br>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 20px;">
+            <a href="#">
+                <img src="{{ url_for('static', filename='img/distant1-vmake.png') }}" alt="distant1">
+            </a>
+            <a href="#">
+                <img src="{{ url_for('static', filename='img/distant2-vmake.png') }}" alt="distant2">
+            </a>
+            <a href="#">
+                <img src="{{ url_for('static', filename='img/distant3-vmake.png') }}" alt="distant3">
+            </a>
+            <a href="#">
+                <img src="{{ url_for('static', filename='img/distant4-vmake.png') }}" alt="distant4">
+            </a>
+            <a href="#">
+                <img src="{{ url_for('static', filename='img/distant5-vmake.png') }}" alt="distant5">
+            </a>
+            <a href="#">
+                <img src="{{ url_for('static', filename='img/distant6-vmake.png') }}" alt="distant6">
+            </a>
+            <a href="#">
+                <img src="{{ url_for('static', filename='img/distant7-vmake.png') }}" alt="distant7">
+            </a>
+            <a href="#">
+                <img src="{{ url_for('static', filename='img/distant8-vmake.png') }}" alt="distant8">
+            </a>
+            <a href="#">
+                <img src="{{ url_for('static', filename='img/distant9-vmake.png') }}" alt="distant9">
+            </a>
+        </div>
+    </div>
+      -->
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top footer">{% include 'main/_footer.html' %}</footer>
+</div>
+
+    <script src="{{ url_for('static', filename='js/libs/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script>
+        document.getElementById('sidebarToggle').addEventListener('click', function() {
+        document.getElementById('sidebar').classList.toggle('open');
+        });
+
+        document.getElementById('closeSidebar').addEventListener('click', function() {
+        document.getElementById('sidebar').classList.remove('open');
+        });
+    </script>
+</body>
+</html>

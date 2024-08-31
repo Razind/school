@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}ШСК{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Школьный спортивный клуб</h1>
+<div style="margin-top: 30px;">
+    <p>Школьный спортивный клуб - общественная организация учителей, родителей и учащихся, способствующая развитию физической культуры, спорта и туризма в школе.</p>
+    <p>Школьный спортивный клуб создается с целью организации и проведения спортивно-массовой работы в образовательном учреждении во внеурочное время.</p>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Лицензия от 22.01.2016 года</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Выписка из протокола №4 Совета Школы №70 «О создании в образовательной организации школьного спортивного клуба».</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Выписка из протокола №6 Совета Школы №70 «О работе  школьного спортивного клуба».</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Устав Школьного спортивного клуба</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">План физкультурно-оздоровительных и спортивно-массовых мероприятий ШСК на 2020-2021 уч. год</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Расписание работы секций/кружков в Школе №70 на 2020-2021 уч. год работа</a>
+        </li>
+    </ul>
+    <br>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/shsk1_11zon.png') }}" alt="shsk1_11zon.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/shsk2_11zon.png') }}" alt="shsk2_11zon.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/shsk3_11zon.png') }}" alt="shsk3_11zon.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    
+
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Противодействие коррупции{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Противодействие коррупции</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://educat.samregion.ru/category/anti-corruption/">Ссылка на раздел «Противодействие коррупции» на сайте МОиН Самарской области</a>
+        </li>
+    </ul>
+        <p style="font-size: 18px; font-weight: 400;">Генеральная прокуратура Российской Федерации предлагает родителям ознакомится с памяткой <a href="#">«Мы против коррупции в образовании».</a></p>
+        <p style="font-size: 18px; font-weight: 400;">Прокуратура Самарской области: Информация в помощь родителям <a href="#">«Как можно бороться с поборами в школах».</a></p>
+        <p style="font-size: 18px; font-weight: 400;">Противодействие коррупции <a href="#">ПАМЯТКА «Что нужно знать о коррупции»</a></p>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://мвд.рф/anticorr/NPA?ysclid=lnly2uhye5586737734">"Нормативные правовые и иные акты в сфере противодействия коррупции"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://base.garant.ru/197633/?ysclid=lnly5wymnr136318254">"Антикоррупционная экспертиза"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://мвд.рф/anticorr/forms/Spravki_BK?ysclid=lnlyacdc2g426718051">"Формы документов, связанных с противодействием коррупции, для заполнения"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Методические материалы "О порядке привлечения и использования средств физических и (или) юридических лиц и мерах по предупреждению незаконного сбора средств с родителей (законных представителей) обучающихся, воспитанников муниципальных образовательных учреждений городского округа Самара в сфере образования"</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,188 @@
+<header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom">
+    <div class="col-auto d-md-none">
+        <button class="btn btn-primary" id="sidebarToggle">☰</button>
+    </div>
+    <div class="col-md-3 mb-2 mb-md-0 header-logo">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img class="header__img" src="{{ url_for('static', filename='img/header__image.png') }}" alt="header__image">
+            <p>Школа имени<br>Героя Советского Союза<br>А. В. Мельникова</p>
+        </a>
+    </div>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li class="nav-item dropdown">
+          <a class="nav-link  px-2 " href="/" id="mainMenu" role="button" >
+              Главная
+          </a>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link  px-2" href="#" id="infoMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Сведения об образовательной организации
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="infoMenu">
+              <li><a class="dropdown-item" href="{{ url_for('iato.sooo') }}">Сведения об<br> образовательной организации</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.g_i_a') }}">Государственная<br> итоговая аттестация</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.org_pit') }}">О питания</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.o_pritm_v_perv_klas') }}">О приеме в первый<br> класс</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.doschool') }}">Дошкольное отделение</a></li>
+              <li><a class="dropdown-item" href="https://asurso.ru/">Электронный журнал</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.elec_bib') }}">Электронная библиотека</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.povish_kach_obraz') }}">Повышение качества<br> образования</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.fynkc_gram') }}">Функциональная грамотность</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.nastav') }}">Наставничество</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.kontakti') }}">Контакты</a></li>
+              <li><a class="dropdown-item" href="https://edu.gov.ru/">Официальный сайт министерства<br> просвещения российской федерации</a></li>
+              <li><a class="dropdown-item" href="https://minobrnauki.gov.ru/">Министерство науки<br> и высшего образования рф</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.reg_na_gy') }}">Регистрация<br> на портале госуслуги</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.faq') }}">FAQ (вопрос/ответ к<br> администрации мбоу)</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.dostyp_sred') }}">Доступная среда</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.protiv_kor') }}">Противодействие коррупции</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.distant') }}">Дистанционный режим обучения</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.rasp_dis_obuch') }}">Расписание дистанционного обучения</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('iato.dosyg_deyat') }}">Досуговая деятельность</a></li>
+          </ul>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link  px-2" href="#" id="schoolLifeMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Школьная жизнь
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="schoolLifeMenu">
+              <li><a class="dropdown-item" href="/">Главная</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.inf_dl_rod') }}">Информация<br> для родителей</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.sh_gaz') }}">Школьная газета</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.sh_teatr') }}">Школьный театр</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.sh_muz') }}">Школьный музей</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.olimp') }}">Олимпиада</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.vospit_rab') }}">Воспитательная<br> работа</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.proekt_zdor_shc') }}">Проект "Здоровая школа"</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.volonterstvo') }}">Волонтерство</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.ekolog_vospit') }}">Экологическое<br>воспитание</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.meropriyatiya') }}">Мероприятия</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.proekti') }}">Проекты</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.profor') }}">Профориентация</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.mediac') }}">Медиация</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.let_lag') }}">Летний лагерь</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.profrab') }}">Профилактическая<br> работа</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.metodich_kopilka') }}">Методическая<br> копилка</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.o_tebe_sammara') }}">О тебе, моя самара!</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.bezop') }}">Безопасность</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.dor_bezop') }}">Дорожная безопасность</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('shlive.shsk') }}">ШСК</a></li>
+          </ul>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link  px-2" href="#" id="teachersMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Учителя
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="teachersMenu">
+              <li><a class="dropdown-item" href="{{ url_for('ychit.uchitelya_shkoli') }}">Учителя школы</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('ychit.nash_profsoyz') }}">Наш профсоюз</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('ychit.ohrana_truda') }}">Охрана труда</a></li>
+              <li><a class="dropdown-item" href="{{ url_for('ychit.nacional_proekti') }}">Национальные<br> проекты</a></li>
+          </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link  px-2 " href="{{ url_for('klassi.str_klassi') }}" id="mainMenu" role="button" >
+            Классы
+        </a>
+    </li>
+      
+    </ul>
+</header>
+
+<!-- Новый слайдбар Bootstrap -->
+<div id="sidebar" class="sidebar flex-shrink-0 p-3 bg-white" style="width: 100%; position: fixed; top: 0; left: -100%; height: 100%; z-index: 1000; overflow-y: auto; transition: left 0.3s ease;">
+    <button id="closeSidebar" class="btn btn-outline-secondary mb-3" style="width: 100%;">Закрыть ×</button>
+    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+        <img class="bi pe-none me-2" width="24" height="24" src="{{ url_for('static', filename='img/header__image.png') }}" alt="Logo">
+        <span class="fs-6 fw-semibold">Главная</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-dark small" data-bs-toggle="collapse" data-bs-target="#info-collapse" aria-expanded="false">
+                Сведения об организации
+            </button>
+            <div class="collapse" id="info-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.sooo') }}">Сведения об<br> образовательной организации</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.g_i_a') }}">Государственная<br> итоговая аттестация</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.org_pit') }}">О питания</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.o_pritm_v_perv_klas') }}">О приеме в первый<br> класс</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.doschool') }}">Дошкольное отделение</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="https://asurso.ru/">Электронный журнал</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.elec_bib') }}">Электронная библиотека</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.povish_kach_obraz') }}">Повышение качества<br> образования</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.fynkc_gram') }}">Функциональная грамотность</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.nastav') }}">Наставничество</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.kontakti') }}">Контакты</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="https://edu.gov.ru/">Официальный сайт министерства<br> просвещения российской федерации</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="https://minobrnauki.gov.ru/">Министерство науки<br> и высшего образования рф</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.reg_na_gy') }}">Регистрация<br> на портале госуслуги</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.faq') }}">FAQ (вопрос/ответ к<br> администрации мбоу)</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.dostyp_sred') }}">Доступная среда</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.protiv_kor') }}">Противодействие коррупции</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.distant') }}">Дистанционный режим обучения</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.rasp_dis_obuch') }}">Расписание дистанционного обучения</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('iato.dosyg_deyat') }}">Досуговая деятельность</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-dark small" data-bs-toggle="collapse" data-bs-target="#school-collapse" aria-expanded="false">
+                Школьная жизнь
+            </button>
+            <div class="collapse" id="school-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.inf_dl_rod') }}">Информация<br> для родителей</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.sh_gaz') }}">Школьная газета</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.sh_teatr') }}">Школьный театр</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.sh_muz') }}">Школьный музей</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.olimp') }}">Олимпиада</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.vospit_rab') }}">Воспитательная<br> работа</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.proekt_zdor_shc') }}">Проект "Здоровая школа"</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.volonterstvo') }}">Волонтерство</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.ekolog_vospit') }}">Экологическое<br>воспитание</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.meropriyatiya') }}">Мероприятия</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.proekti') }}">Проекты</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.profor') }}">Профориентация</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.mediac') }}">Медиация</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.let_lag') }}">Летний лагерь</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.profrab') }}">Профилактическая<br> работа</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.metodich_kopilka') }}">Методическая<br> копилка</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.o_tebe_sammara') }}">О тебе, моя самара!</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.bezop') }}">Безопасность</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.dor_bezop') }}">Дорожная безопасность</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('shlive.shsk') }}">ШСК</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-dark small" data-bs-toggle="collapse" data-bs-target="#teachers-collapse" aria-expanded="false">
+                Учителя
+            </button>
+            <div class="collapse" id="teachers-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('ychit.uchitelya_shkoli') }}">Учителя школы</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('ychit.nash_profsoyz') }}">Наш профсоюз</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('ychit.ohrana_truda') }}">Охрана труда</a></li>
+                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded small" href="{{ url_for('ychit.nacional_proekti') }}">Национальные<br> проекты</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="mb-1">
+            <a style="color: #212529; padding: 6px 12px;" href="{{ url_for('klassi.str_klassi') }}" id="mainMenu" role="button" >
+                Классы
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    document.getElementById('sidebarToggle').addEventListener('click', function () {
+        document.getElementById('sidebar').style.left = '0';
+    });
+
+    document.getElementById('closeSidebar').addEventListener('click', function () {
+        document.getElementById('sidebar').style.left = '-100%';
+    });
+</script>

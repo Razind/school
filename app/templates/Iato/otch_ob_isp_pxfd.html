@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Отчеты об исполнении плана финансово-хозяйственной деятельности{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Отчеты об исполнении плана финансово-хозяйственной деятельности</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Отчет об исполнении ПФХД за 2016 год </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Отчет об использовании внебюджетных средств</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Отчет об исполнении ПФХД на 01.01.2016г. - субсидии  на выполнение государственного (муниципального) задания</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Отчет об исполнении ПФХД на 01.01.2016г. - субсидии на иные цели</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Отчет об исполнении ПФХД на 01.01.2016г. - собственные доходы</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

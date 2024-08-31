@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Уроки истории{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Уроки истории Самарского края. Самарское Знамя.</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">История Самарского Знамени.</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Александр Аленин{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Александр Аленин</h1>
+<div style="margin-top: 30px;">
+    <div style="max-width: 450px;">
+        <img src="{{ url_for('static', filename='img/alex_alenin1.png') }}" alt="alex_alenin1.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <p>Александр Аленин – выпускник 1983 года, геройски погиб в Афганистане. Младший сержант Александр Аленин  награжден орденом «Красной Звезды», медалью «Воину-интернационалисту от благодарного афганского народа», Грамотой Президиума Верховного Совета СССР «Воину-интернационалисту».</p>
+    <br>
+    <h5 class="text-center">В музее "История школы №70" </h5>
+    <div style="display: grid; justify-items: center;">
+        <div style="max-width: 774px;">
+            <img src="{{ url_for('static', filename='img/alex_alenin2.png') }}" alt="alex_alenin2.png" style="width: 100%; margin-bottom: 20px;">
+            <img src="{{ url_for('static', filename='img/alex_alenin3.png') }}" alt="alex_alenin3.png" style="width: 100%; margin-bottom: 20px;">
+        </div>
+        <div style="margin-top: 30px; margin-bottom: 30px;">
+            <iframe class="speakerdeck-iframe" frameborder="0" src="//speakerdeck.com/player/8921e8896e3a46469fd7d34fa0cb74ec?title=false&skipResize=true" title="Самарское знамя. Уроки истории Самарского края." allowfullscreen="true" style="border: 0px; background: padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 774px; height: 436px;"></iframe>
+        </div>
+    </div>
+
+
+
+</div>
+{% endblock %}

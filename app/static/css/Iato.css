@@ -1,0 +1,44 @@
+.content a {
+    text-decoration: none;
+    color: rgb(0, 71, 129)c6c;
+    font-size: 18px;
+    font-weight: 500;
+}
+li a {
+    text-decoration: none;
+    color: #000;
+}
+h1 {
+    text-align: center;
+}
+h4 {
+    margin-bottom: 10px;
+}
+.info-list {
+    list-style-type: none;
+    padding: 0;
+}
+.info-list li {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+}
+.info-list li img {
+    margin-right: 10px;
+}
+
+.list-class {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.li-class {
+    display: flex; 
+    flex-direction: column;
+}
+
+.a-class {
+    display: block; 
+}

@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Степанова Марина Юрьевна{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Степанова Марина Юрьевна</h1>
+<div style="margin-top: 30px; display: flex; flex-direction: row-reverse; justify-content: space-between;">
+    <div style="max-width: 450px;">
+        <img src="{{ url_for('static', filename='img/stepanova.png') }}" alt="stepanova.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <div>
+        <h5>Ф.И.О.</h5>
+        <p>Степанова Марина Юрьевна</p>
+        <h5>Должность</h5>
+        <p>Учитель технологии, методист музея</p>
+        <h5>Предмет</h5>
+        <p>Технология</p>
+        <h5>Образовани</h5>
+        <p>Высшее. Мозырский государственный педагогический институт им. Н.К.Крупской, факультет физики и математики.</p>
+        <h5>Награды</h5>
+        <p>1. Почетная грамота министерства образования и науки Российской Федерации</p>
+        <p>2. Памятный знак "Куйбышев -запасная столица"</p>
+        <h5>Личные достижения</h5>
+        <p>участие в городском конкурсе "Лучший учитель по предмету". Секция "Урок биологии по ФГОС"</p>
+        <h5>Публикации</h5>
+        <p>Статья в сборнике научно-практической  конференции «Гражданско-патриотическое образование россиянина в поликультурном мире. 70 лет Великой Победы» (2015 год)</p>
+        <h5>Достижения учащихся</h5>
+        <ul class="info-list">
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('shlive.prezenac_muz') }}">Награды школьного музея "История школы №70"</a>
+            </li>
+        </ul>
+    </div>
+    
+
+</div>
+{% endblock %}

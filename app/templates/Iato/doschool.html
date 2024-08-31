@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Сведения об образовательной организации{% endblock %}
+
+{% block content %}
+<h1>Дошкольное отделение</h1>
+<ul class="info-list">
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.doschool_obsh_sved') }}">Общие сведения</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.doschool_dokumenti') }}">Документы дошкольного отделения</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.doschool_obrazov') }}">Образование</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.doschool_fop') }}">Федеральная образовательная программа дошкольного образования</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.doschool_komplekt') }}">Комплектование</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="">Вакантные места для приема (перевода)</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.doschool_bezop') }}">Безопасность</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="{{ url_for('iato.doschool_organiz_pit') }}">Организация питания воспитанников</a>
+    </li>
+</ul>
+<h4>Уважаемые родители!</h4>
+<p>Для успешного зачисления в дошкольное отделение рекомендуем Вам проверить данные, указанные в Вашем заявлении в автоматизированной информационной системе «Автоматизированная система управления региональной системой образования» (модуль «Е-услуги. Образование») (<a href="https://es.asurso.ru">https://es.asurso.ru</a>). В случае обнаружения в заявлении неточностей и утративших силу сведений Вы можете обратиться к руководителю любого из указанных в Вашем заявлении детских садов в приемные дни (понедельник – с 14.00 до 17.00, четверг – с 9.00 до 12.00) для внесения необходимых изменений.</p>
+<p>Сведения о качестве условий образовательной деятельности организаций, осуществляющих образовательную деятельность, расположенных на территории Самарской области, размещаются на официальном сайте <a href="http://bus.gov.ru">http://bus.gov.ru</a>. На сайте bus.gov.ru реализована возможность для граждан провести оценку качества условий образовательной деятельности образовательных организаций и оставить отзыв о качестве услуг, предоставляемых образовательными организациями. <a href="">Инструкция о размещении гражданами отзывов на сайте bus.gov.ru</a>.</p>
+<ul class="info-list">
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="">Рекомендации для родителей по организации личного времени и досуга детей в период длительного пребывания дома.</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="">Восемь правил для родителей</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="">Электронно-образовательные ресурсы</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="">Ресурсы для музыкального развития дошкольников</a>
+    </li>
+    <li>
+        <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+        <a style="font-size: 20px;" class="nav-link " href="">Информация для родителей  «Острые детские инфекции»</a>
+    </li>
+</ul>
+<div style="max-width: 851px;">
+    <img src="{{ url_for('static', filename='img/doschool1.png') }}" alt="doschool1.png" style="width: 100%;">
+    <img  src="{{ url_for('static', filename='img/doschool2.png') }}" alt="doschool1.png" style="width: 100%; margin-top: 30px;">
+    <img  src="{{ url_for('static', filename='img/doschool3.png') }}" alt="doschool1.png" style="width: 100%; margin-top: 30px;">
+    <img  src="{{ url_for('static', filename='img/doschool4.png') }}" alt="doschool1.png" style="width: 100%; margin-top: 30px;">
+    <img  src="{{ url_for('static', filename='img/doschool5.png') }}" alt="doschool1.png" style="width: 100%; margin-top: 30px;">
+    <img  src="{{ url_for('static', filename='img/doschool6.png') }}" alt="doschool1.png" style="width: 100%; margin-top: 30px;">
+</div>
+{% endblock %}

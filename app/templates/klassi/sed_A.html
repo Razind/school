@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}7 "А" класс{% endblock %}
+
+{% block content %}
+<h1 class="text-center">7 "А" класс</h1>
+<h1 class="text-center">Классный руководитель: Кирсанова Светлана Михайловна</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=J6DJEKURsOU">Новогодний огонёк в 6 классе</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=toxJ5Oys_ew">Новогодний огонёк 2022. 5а</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=LFt-BWmYY4c">Осень. Ура каникулы!</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=2iBnJq7d0zA">Поздравление с днем матери. 5 А.</a>
+        </li>
+    </ul>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/sed_A1.png') }}" alt="sed_A1.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/sed_A2.png') }}" alt="sed_A2.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+</div>
+{% endblock %}

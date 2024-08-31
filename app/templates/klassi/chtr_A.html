@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}4 "А" класс{% endblock %}
+
+{% block content %}
+<h1 class="text-center">4 "А" класс</h1>
+<h1 class="text-center">Классный руководитель: Кандалова Ольга Ивановна</h1>
+<div style="margin-top: 30px;">
+    <p>Ученики 2 «А» класса приняли участие во 2 городском открытом конкурсе " Калейдоскоп научных опытов".  Поздравляем Черняева Георгия и Корнееву Юлию, победителей в номинации "Научно и интересно" и в номинации "Классический научный опыт".</p>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=TCsY2m1h8IM">Калейдоскоп научных опытов. 2 "А" класс </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://drive.google.com/file/d/1Y6SRyE8s4_pV5iBSxzSnscGSHt_guiSK/view">Катюша и Три танкиста</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

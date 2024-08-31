@@ -1,0 +1,13 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content | nl2br | safe }}</p>
+    <small>{{ post.date_posted.strftime('%d %B %Y, %H:%M') }}</small>
+    <br>
+    <a href="{{ url_for('post.admin_news') }}" class="btn btn-secondary">Назад</a>
+  </div>
+{% endblock %}

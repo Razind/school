@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Книга памяти{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Книга памяти</h1>
+<div style="margin-top: 30px; display: grid; justify-items: center;">
+    <p>В создании КНИГИ ПАМЯТИ принимали участие ученики,  учителя и сотрудники нашей школы.</p>
+    <p>Мы очень благодарны своим родным, сохранившим  фотографии, документы, в которых не только история семьи, но и история страны.</p>
+    <iframe src="http://www.slideserve.com/embed/7704439" width="705" height="575" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""> </iframe>
+</div>
+{% endblock %}

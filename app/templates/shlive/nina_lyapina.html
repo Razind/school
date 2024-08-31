@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Её имя носила пионерская дружина нашей школы{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Её имя носила пионерская дружина нашей школы</h1>
+<div style="margin-top: 30px;">
+    <p>Имя Нины Ляпиной было присвоено  пионерской дружине нашей школы за активную поисковую работу о бесстрашной партизанке отряда Ковпака медсестре Нине. Помогал ребятам 70-х годов писатель Андрей Вятский, написавший в 1963 году повесть о Нине Ляпиной - «Если бы у меня было десять жизней». </p>
+    <br>
+    <h5>Экспозиция музея, посвящённая Нине Ляпиной</h5>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/nina_lyapina1.png') }}" alt="nina_lyapina1.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/nina_lyapina2.png') }}" alt="nina_lyapina2.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://www.youtube.com/watch?v=pwZ0PZOsAos">Видеоэкскурсия "Две судьбы военных медсестер"</a>
+        </li>
+    </ul>
+    
+    
+
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Гагаринский урок{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Гагаринский урок</h1>
+<div style="margin-top: 30px;">
+    <div style="margin-top: 30px; margin-bottom: 30px; display: grid; justify-items: center;">
+        <iframe class="speakerdeck-iframe" frameborder="0" src="//speakerdeck.com/player/aa60234c7ba64e2d854d686d5d678f8f?title=false&skipResize=true" title="Самарское знамя. Уроки истории Самарского края." allowfullscreen="true" style="border: 0px; background: padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 774px; height: 580px;"></iframe>
+    </div>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Фильмы для «Гагаринского урока «Космос – это мы» разработали эксперты московского Музея космонавтики.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">12 апреля 2020 года Гагаринский урок в музее космонавтики.</a>
+        </li>
+    </ul>
+    <p>Урок адаптирован под проведение в онлайн-формате.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Безопасность{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Безопасность</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Рекомендации по недопущению проникновения и нахождения животных без владельцев на территории социальных объектов Самарской области.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">ПАМЯТКА "Как себя вести при встрече с собакой во избежание причинения вреда жизни и здоровью человека"</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Памятка по профилактике экстремизма 2022</a>
+        </li>
+    </ul>
+    <br>
+    <h5>Видеоролики социальной рекламы:</h5>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Об ответственности за экстремизм.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">О правилах поведения в социальных сетях.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Что такое несанкционированный митинг?</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Видеоурок «Осторожно – электротравматизм».</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://bdd-eor.edu.ru/">ФЕДЕРАЛЬНЫЙ КАТАЛОГ ИНТЕРАКТИВНЫХ ОБРАЗОВАТЕЛЬНЫХ ПРОГРАММ</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://youtu.be/KvKN5RSlWGc">Правила поведения на воде в зимний период</a>
+        </li>
+    </ul>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/bezop1.png') }}" alt="bezop1.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/bezop2.png') }}" alt="bezop2.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <p>Приближаться к оборванному проводу ЗАПРЕЩЕНО!</p>
+    <p>Проникновение на территорию электроустановок смертельно опасно!</p>
+    <p>Селфи с ЛЭП – смертельно опасны!</p>
+</div>
+{% endblock %}

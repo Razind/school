@@ -1,0 +1,141 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Летний лагерь{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Летний лагерь</h1>
+<div style="margin-top: 30px;">
+    <h5 class="text-center">Основные сведения</h5>
+    <p>Полное наименование лагеря: "Лагерь с дневным пребыванием детей «Зеленая Планета» при МБОУ Школе №70 г.о. Самара"</p>
+    <p>Адрес местонахождения лагеря:  г. Самара, ул. Коммунистическая, д.7</p>
+    <p>Режим и график работы: лагерь сезонный (июнь), время работы  8.30 -14.30 - для детей с 2х разовым питанием.</p>
+    <p>Телефон:  8 (846) 336-47-42</p>
+    <p>Электронная почта: so_sdo.school_70@samara.edu.ru</p>
+    <br>
+    <h5>Документы</h5>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Положение о пришкольном лагере с дневным пребыванием детей МБОУ Школы №70 г.о. Самара.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">ПАСПОРТ организаций отдыха и оздоровления детей и подростков в МБОУ Школе № 70 г.о. Самара по состоянию на 01.02.2024г.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Правила нахождения в ЛДП</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Режим</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Санитарно-эпидемиологическое заключение</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Договор с мед учреждением</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Приказ ЛДП</a>
+        </li>
+    </ul>
+    <br>
+    <h5>Деятельность</h5>
+    <p>В лагерь принимаются учащиеся МБОУ Школы №70 г.о.Самара с 7 до 16 лет.</p>
+    <br>
+    <h5>Даты проведения смены  с 01.06.24 г. по 26.06.24 г.</h5>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">План сетка мероприятий ЛДП</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Краткосрочная рабочая программа кружка «Бумажный мир Фантазии»</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Школа №70 г.о.Самара «Зеленая Планета»</a>
+        </li>
+    </ul>
+    <br>
+    <h5>Руководство. Педагогический и вожатский состав</h5>
+    <p>Начальник лагеря: Казарина Мария Дмитриевна,  336-47-42</p>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Информация о доступности ЛДП для инвалидов и лиц с ОВЗ</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Штатное расписание</a>
+        </li>
+    </ul>
+    <br>
+    <h5 class="text-center">Материально-техническое обеспечение и оснащенность</h5>
+    <br>
+    <h5>Питание осуществляет ООО «Кондитерское»</h5>
+    <p>Завтрак: 9:15 – 10:00</p>
+    <p>Обед: 13:00 – 14:00</p>
+    <ul class="info-list">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Примерное восемнадцатидневное меню рациона питания детей, находящихся в лагере дневного пребывания в МБОУ Школе №70 г.о. Самара (завтрак, обед) 2024г.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Ежедневное (с 1 июня по 26 июня) меню рациона питания детей, находящихся в лагере дневного пребывания в МБОУ Школе №70 (завтрак, обед) 2024г.</a>
+        </li>
+    </ul>
+    <br>
+    <h5>Лагерь дневного пребывания детей «Зеленая Планета» осуществляет свою деятельность на базе МБУ Школы №70 г.о.Самара.</h5>
+    <p>Материально-техническая база школы позволяет осуществлять мероприятия по творчески организованному досугу и оздоровлению детей.</p>
+    <p>Школа располагает необходимым количеством учебных кабинетов для расположения отрядов, а также имеются:</p>
+    <div style="margin-left: 30px;">
+        <p>актовый зал;</p>
+        <p>игровые комнаты;</p>
+        <p>футбольное поле;</p>
+        <p>выставочные площади (для творческих работ участников смены);</p>
+        <p>территория (для организации и проведения концертно-творческих мероприятий на открытой площадке);</p>
+        <p>звукоусиливающая аппаратура, микрофоны;</p>
+        <p>видеопроектор/экран; ноутбуки;</p>
+    </div>
+    <p>предоставляются:</p>
+    <div style="margin-left: 30px;">
+        <p>различный спортивный инвентарь.</p>
+        <p>настольные игры, наборы для моделирования</p>
+        <p>призы и награды  для стимулирования  участия в конкурсных мероприятиях;</p>
+    </div>
+    <br>
+    <h5 class="text-center">Информация для родителей</h5>
+    <p>Ребенок принимается в Летний пришкольный лагерь «Зеленая Планета» на основании заявления родителей. <a href="#">заявление</a></p>
+    <p>Ваш ребенок в ближайшее время будет ходить в летний пришкольный лагерь? Мы расскажем о том, что следует взять с собой в лагерь дневного пребывания. Наш список содержит наиболее необходимые вещи, но помните, что окончательный вариант списка варьируется в зависимости от времени года, погодных условий, индивидуальных особенностей и потребностей ребенка.</p>
+    <p>Также не стоит забывать, что лагерь дневного пребывания предполагает наличие минимума личных вещей, ведь ребенок покидает дом совсем ненадолго.</p>
+    <p>Теплая кофта или ветровка – на случай прохладной погоды</p>
+    <p>Сменные носки и сменная обувь;</p>
+    <p>Непромокаемая куртка или дождевик на случай дождливой погоды           </p>
+    <p>Зонт – менее удачный вариант, детям с ними не очень удобно и зонты часто теряются</p>
+    <p>Головной убор, защищающий от солнца</p>
+    <p>Удобная обувь по погоде для долгих пеших прогулок и игр</p>
+    <p>Влажные салфетки и бумажные носовые платки</p>
+    <p>Бутылка с водой</p>
+    <p>Транспортная карта</p>
+    <p>Папка для творчества</p>
+    <br>
+    <h5 class="text-center">Лагерь с дневным пребыванием «Зеленая планета»</h5>
+    <div style="max-width: 600px;">
+        <img src="{{ url_for('static', filename='img/let_lag1.png') }}" alt="let_lag1.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/let_lag2.png') }}" alt="let_lag2.png" style="width: 100%; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='img/let_lag3.png') }}" alt="let_lag3.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <br>
+    <h5 class="text-center">АКЦИЯ «Зарядка от нас – здоровье для вас!» Утренняя зарядка-2018  Школы 70 «МЫ ВЫБИРАЕМ СПОРТ»</h5>
+    <br>
+    <iframe width="600" height="315" style="margin-bottom: 30px;" src="https://www.youtube.com/embed/M4uvMMDVnUU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% endblock %}

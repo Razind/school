@@ -1,0 +1,17 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+<div>
+<h1 style="margin-bottom: 40px; text-align: center;">Редактирование новости<br> {{ post.title }}</h1>
+    <div style="margin-right: 200px; margin-left: 200px;">
+        <form method="post" class="form-control d-flex flex-column gap-4">
+            <input value="{{ post.title }}"   name="title" type="text" placeholder="Заголовок" class="form-control" style="margin-top: 10px;">
+            <textarea name="content" type="text" placeholder="Текст новости" class="form-control">{{ post.content }}</textarea>
+            <input value="1" name="image" type="file" class="form-control">
+            <input value="Сохранить" type="submit" class="btn btn-success" style="margin-left: 300px; margin-right: 300px;">
+        </form>
+    </div>
+</div>
+{% endblock %}

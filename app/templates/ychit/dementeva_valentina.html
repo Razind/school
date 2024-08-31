@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Дементьева Валентина Александровна{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Дементьева Валентина Александровна</h1>
+<div style="margin-top: 30px; display: flex; flex-direction: row-reverse; justify-content: space-between;">
+    <div style="max-width: 500px;">
+        <img src="{{ url_for('static', filename='img/dementeva.png') }}" alt="dementeva.png" style="width: 100%; margin-bottom: 20px;">
+    </div>
+    <div>
+        <h5>Ф.И.О.</h5>
+        <p>Дементьева Валентина Александровна</p>
+        <h5>Должность</h5>
+        <p>Учитель начальных классов</p>
+        <h5>Предмет</h5>
+        <p>Начальные классы</p>
+        <h5>Образовани</h5>
+        <p>Высшее. Украина, Бердянский государственный педагогический университет, "Учитель начальных классов", Институт психолого-педагогического образования и искусств "Психолог"</p>
+        <h5>Сайт</h5>
+        <p><a href="https://demvalentina.wixsite.com/">https://demvalentina.wixsite.com/</a></p>
+        <h5>Личные достижения</h5>
+        <ul class="info-list">
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="#">Технологическая карта урока</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="http://www.myshared.ru/slide/1356746/">Урок-презентация "На пути к чемпионату мира"</a>
+            </li>
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="https://speakerdeck.com/school70/samyi-vazhnyi-dien">«Самый важный день» - урок по программе «Нравственные основы семейной жизни».</a>
+            </li>
+        </ul>
+        <h5>Личные качества и интересы</h5>
+        <p>Безграничная любовь к детям, доброжелательность, честность, чуткость, внимательность, умение верно оценивать педагогическую ситуацию,терпимость, позитивный взгляд на жизнь, ответственность, коммуникабельность.</p>
+        <p>Хобби: оригами (работа с бумагой), футбол, тхэквандо, флористика</p>
+    </div>
+    
+
+</div>
+{% endblock %}

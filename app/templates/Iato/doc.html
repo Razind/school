@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Руководство. Педагогический состав{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Документы</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list" >
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#"> Устав</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Лицензия от 22.01.2016 года</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Приложение к Лицензии от 22.01.2016 года</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon2">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Свидетельство о внесении в ЕГРЮЛ</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Выписка из реестра аккредитованных организаций № А007-01213-63-01153888.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Свидетельство о постановке на учет в ФНС </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Правила внутреннего распорядка учащихся</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Правила внутреннего трудового распорядка (2023)</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Коллективный договор</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Результаты самообследования 2023</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Результаты самообследования 2022</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Результаты самообследования 2021</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Справка 285/15 о нахождении сайта на территории РФ</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">​Справка 286/15 о нахождении сайта на территории РФ</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Единый график оценочных процедур в МБОУ Школа №70 г.о.Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="{{ url_for('iato.local_act') }}">Локальные акты МБОУ Школа № 70 г.о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Порядок приема обучающихся;</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Режим занятий обучающихся;</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">ПОЛОЖЕНИЕ о форме, периодичности, порядке текущего контроля успеваемости и проведения промежуточной аттестации обучающихся.</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Порядок и основания перевода, отчисления и восстановления обучающихся;</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Порядок оформления возникновения приостановления и прекращения отношений между муниципальным бюджетным общеобразовательным учреждением и обучающимися и родителями </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="#">Отчет о реализации плана мероприятий по достижению целевых показателей национальных проектов «Образование» и «Демография» в 2019 году МБОУ Школа № 70 г.о. Самара</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="https://minobrnauki.gov.ru/?%2F=">Официальный сайт Министерства образования и науки Российской Федерации</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="https://edu.ru/">Федеральный портал «Российское образование»</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="http://window.edu.ru/">Информационная система «Единое окно доступа к образовательным ресурсам» </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="http://school-collection.edu.ru/">Единая коллекция цифровых образовательных ресурсов</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="http://fcior.edu.ru/">Федеральный центр информационно - образовательных ресурсов </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="https://educat.samregion.ru/category/anti-corruption/">Ссылка на раздел антикоррупция на сайте МОиН </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link " href="{{ url_for('iato.bez_lich_dann') }}">Безопасность личных данных</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

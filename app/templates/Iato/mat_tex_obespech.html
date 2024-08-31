@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Материально-техническое обеспечение{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Материально-техническое обеспечение</h1>
+<div style="margin-top: 30px;">
+    <ul class="info-list">
+        <li>
+            <h5>Данные о произведенных поставках  в ходе реализации проектов по модернизации общего образования Самарской области</h5>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('iato.school_bib') }}">Школьная библиотека</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('iato.obor_school_stol') }}">Оборудование для школьной столовой</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ url_for('iato.kap_rem') }}">Капитальный ремонт</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Охрана здоровья обучающихся</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Сенсорная комната</a>
+        </li>
+        <li>
+            <h5>Доступ в интернет осуществляется через компанию ОАО "Ростелеком", ежемесячные платежи - "Корпорация 2 Мбит/с" (ADSL), пользование сетью Интернет с неограниченным объёмом входящего IP-трафика на скорости до 2 Мбит/сек. в месяц. </h5>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Доступ к информационным ресурсам</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Материально-техническая база учреждения</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="">Материально-техническое обеспечение образовательного процесса</a>
+        </li>
+    </ul>
+</div>
+<div style="margin-top: 30px;">
+    <h1 class="text-center">Объекты спорта</h1>
+    <ul class="info-list">
+        <li>
+            <h5>1 спортивный зал, оснащенный специальным оборудованием:</h5>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400; margin-left: 20px;">стенка гимнастическая (10 секций),</p>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400; margin-left: 20px;">канат для лазания,</p>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400; margin-left: 20px;">козел гимнастический,</p>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400; margin-left: 20px;">скамейка гимнастическая (3 шт.),</p>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400; margin-left: 20px;">баскетбольные щиты (2 шт.),</p>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400; margin-left: 20px;">стойка для прыжков в высоту,</p>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400; margin-left: 20px;">теннисный стол (2 шт),</p>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400; margin-left: 20px;">тренажер Степпер (1 шт.),</p>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400; margin-left: 20px;">тренажер беговая дорожка (2шт),</p>
+        </li>
+        <li>
+            <p style="font-size: 18px; font-weight: 400; margin-left: 20px;">степ платформы (4 шт).</p>
+        </li>
+    </ul>
+</div>
+{% endblock %}

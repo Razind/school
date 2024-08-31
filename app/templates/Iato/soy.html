@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Iato.css') }}">
+{% extends 'main/base.html' %}
+
+{% block title %}Сведения об образовательной организации{% endblock %}
+
+{% block content %}
+<h1>Структура и органы управления образовательной организацией</h1>
+<div style="margin-top: 30px;">
+    <h4>Структура и органы общественного управления школы.</h4>
+    <p>Управление организацией осуществляется в соответствие с законодательством Российской Федерации и Самарской области.</p>
+    <p>Уставом и на основе сочетания принципов единоначалия и коллегиальности.</p>
+    <img src="{{ url_for('static', filename='img/17564729.jpg') }}" alt="Структура и органы управления образовательной организацией">
+    <ul class="info-list" style="margin-top: 30px;">
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px;" class="nav-link " href="#">Структура и органы управления образовательной организацией</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px;" class="nav-link " href="#">Положение о Совете Школы</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px;" class="nav-link " href="#">Положение о Педагогическом совете Школы </a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon2">
+            <a style="font-size: 18px;" class="nav-link " href="#">Положение об Общем собрании работников Школы</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px;" class="nav-link " href="#">Положение о дошкольных группах</a>
+        </li>
+        <li>
+            <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+            <a style="font-size: 18px;" class="nav-link " href="#">Положение о наставничестве</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}
