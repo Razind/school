@@ -87,12 +87,20 @@ body {
         width: 70px;
         height: 56px;
     }
+
+    .text_post {
+        font-size: 12;
+    }
 }
 
 /* Медиазапрос для экранов больше 768px */
 @media (min-width: 768px) {
     #sidebarToggle {
         display: none; /* Скрывает кнопку Sidebar на больших экранах */
+    }
+
+    .text_post {
+        font-size: 12;
     }
 }
 
@@ -101,6 +109,7 @@ body {
     .header a {
         font-size: 12px;
     }
+    
 }
 
 /* Стили для слайдбара */

@@ -5,10 +5,12 @@
 
 {% block content %}
 <div class="container">
-    <h1>{{ post.title }}</h1>
-    <p>{{ post.content | nl2br | safe }}</p>
+    <h1 class="text-center">{{ post.title }}</h1>
+    <p class="text-center">{{ post.content | nl2br | safe }}</p>
     {% if post.image %}
-    <img src="{{ url_for('static', filename='upload/' + post.image) }}" alt="" class="responsive-image">
+    <div style="max-width: 600px;">
+      <img src="{{ url_for('static', filename='upload/' + post.image) }}" alt="" style="width: 100%; margin-bottom: 20px;">
+  </div>
     {% endif %}
     <div class="date-container">
       <small>{{ post.date_posted.strftime('%d %B %Y, %H:%M') }}</small>
