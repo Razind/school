@@ -3,6 +3,7 @@ from .extensions import db, migrate
 from .config import Config
 from flask_login import LoginManager
 from .models.user import User  # Импортируйте модель User
+from sqlalchemy import text
 
 
 from .routes.user import user_bp
@@ -47,5 +48,12 @@ def create_app(config_class=Config):
 
     with app.app_context():
         db.create_all()
+
+        # Добавьте тестовый запрос для проверки подключения к базе данных
+        try:
+            result = db.session.execute(text('SELECT 1'))
+            print(f"Database connection test passed: {result.fetchone()}")
+        except Exception as e:
+            print(f"Database connection test failed: {e}")
 
     return app
