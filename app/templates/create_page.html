@@ -1,0 +1,14 @@
+<form method="POST" action="{{ url_for('pages_bp.create_page') }}">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.name.label }}  <!-- Отображение метки -->
+        {{ form.name() }}      <!-- Отображение поля ввода -->
+    </div>
+    <div>
+        {{ form.slug.label }}
+        {{ form.slug() }}
+    </div>
+    <div>
+        <button type="submit">Создать страницу</button>
+    </div>
+</form>

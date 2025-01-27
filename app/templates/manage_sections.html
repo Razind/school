@@ -1,0 +1,21 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1>Sections for "{{ page.name }}"</h1>
+        <ul>
+            {% for section in sections %}
+                <li>
+                    <strong>{{ section.name }}</strong> (Order: {{ section.order }})
+                    <a href="{{ url_for('section_bp.manage_elements', section_id=section.id) }}">Manage Elements</a>
+                    <a href="{{ url_for('section_bp.edit_section', section_id=section.id) }}">Edit Section</a>
+                    <form action="{{ url_for('section_bp.delete_section', section_id=section.id) }}" method="post" style="display:inline;">
+                        <button type="submit" onclick="return confirm('Delete this section?')">Delete</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('section_bp.create_section', page_id=page.id) }}">Add New Section</a>
+        <br><a href="{{ url_for('pages_bp.pages_all') }}">Back to Pages</a>
+    </div>
+{% endblock %}

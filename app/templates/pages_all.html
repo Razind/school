@@ -1,0 +1,37 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1>All Pages</h1>
+        <a href="{{ url_for('pages_bp.create_page') }}" class="btn btn-primary mb-3">Создание новой страницы</a>
+        
+        {% if pages %}
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Slug</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for page in pages %}
+                        <tr>
+                            <td>{{ loop.index }}</td>
+                            <td>{{ page.name }}</td>
+                            <td>{{ page.slug }}</td>
+                            <td>
+                                <a href="{{ url_for('pages_bp.edit_page', page_id=page.id) }}" class="btn btn-warning btn-sm">Изменение названия</a>
+                                <a href="{{ url_for('section_bp.manage_sections', page_id=page.id) }}" class="btn btn-warning btn-sm">Изменение контента</a>
+                                
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No pages available.</p>
+        {% endif %}
+    </div>
+{% endblock %}

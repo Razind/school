@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ page.name }}</h1>
+  <p>Slug: {{ page.slug }}</p>
+
+  <h2>Headings</h2>
+  <ul>
+    {% for heading in headings %}
+      <li>{{ heading.content }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Text Blocks</h2>
+  <ul>
+    {% for block in text_blocks %}
+      <li>{{ block.content }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Links</h2>
+  <ul>
+    {% for link in links %}
+      <li><a href="{{ link.url }}">{{ link.url }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h2>Media</h2>
+  <ul>
+    {% for item in media %}
+      <li><img src="{{ item.url }}" alt="Media"></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

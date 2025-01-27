@@ -1,0 +1,22 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+  <h1>Edit Page</h1>
+  <form method="POST">
+    {{ form.hidden_tag() }}  <!-- для защиты от CSRF атак -->
+    
+    <div>
+      <label for="name">Name:</label>
+      {{ form.name(class="form-control") }}
+    </div>
+
+    <div>
+      <label for="slug">Slug:</label>
+      {{ form.slug(class="form-control") }}
+    </div>
+
+    <div>
+      {{ form.submit(class="btn btn-primary") }}
+    </div>
+  </form>
+{% endblock %}
