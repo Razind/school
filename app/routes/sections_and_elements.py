@@ -2,6 +2,8 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash
 from ..models import Page, Section, Element
 from ..extensions import db
 from ..forms import SectionForm, ElementForm
+from urllib.parse import urlparse
+import json
 
 section_bp = Blueprint('section_bp', __name__)
 
@@ -83,14 +85,30 @@ def create_element(section_id):
 def edit_element(element_id):
     element = Element.query.get_or_404(element_id)
     form = ElementForm(obj=element)
+
     if form.validate_on_submit():
         element.element_type = form.element_type.data
         element.content = form.content.data
-        element.extra_data = form.extra_data.data
+
+        # Проверяем, является ли extra_data просто ссылкой
+        extra_data = form.extra_data.data.strip()
+        parsed_url = urlparse(extra_data)
+
+        if parsed_url.scheme in ['http', 'https', 'mailto']:  # Если введена обычная ссылка
+            element.extra_data = {"url": extra_data}  # Просто присваиваем словарь
+        else:
+            try:
+                element.extra_data = json.loads(extra_data)  # Проверяем, является ли это корректным JSON
+            except json.JSONDecodeError:
+                element.extra_data = {"url": ""}  # На случай ошибки присваиваем пустую ссылку
+
+
         element.order = form.order.data
         db.session.commit()
+
         flash('Element updated successfully!', 'success')
         return redirect(url_for('section_bp.manage_elements', section_id=element.section_id))
+
     return render_template('edit_element.html', form=form, section=element.section)
 
 # Delete an element

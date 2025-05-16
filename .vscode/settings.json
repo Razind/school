@@ -1,0 +1,43 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "dpg-cuq5uedds78s7398r65g-a.oregon-postgres.render.com",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "Render PostgreSQL",
+            "database": "mydb_43xx",
+            "username": "razind"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 54321,
+            "driver": "PostgreSQL",
+            "name": "localhost",
+            "database": "mydb",
+            "username": "razind"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "ep-damp-cell-a2lo8071-pooler.eu-central-1.aws.neon.tech",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "neondb",
+            "database": "neondb",
+            "username": "neondb_owner"
+        }
+    ]
+}

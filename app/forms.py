@@ -20,26 +20,26 @@ class NewsForm(FlaskForm):
     submit = SubmitField('Добавить')
 
 class PageForm(FlaskForm):
-    name = StringField('Name', validators=[DataRequired()])
-    slug = StringField('Slug', validators=[DataRequired()])    
+    name = StringField('Название', validators=[DataRequired()])
+    slug = StringField('Уникальное название', validators=[DataRequired()])    
 
 class EditPageForm(FlaskForm):
-    name = StringField('Name', validators=[DataRequired()])
-    slug = StringField('Slug', validators=[DataRequired()])
-    submit = SubmitField('Save Changes')
+    name = StringField('Название', validators=[DataRequired()])
+    slug = StringField('Уникальное название', validators=[DataRequired()])
+    submit = SubmitField('Сохранить изменение')
 
 class SectionForm(FlaskForm):
-    name = StringField('Section Name', validators=[DataRequired(), Length(max=255)])
-    order = IntegerField('Order', validators=[DataRequired()])
-    submit = SubmitField('Save')
+    name = StringField('Название раздела', validators=[DataRequired(), Length(max=255)])
+    order = IntegerField('Порядок расположения', validators=[DataRequired()])
+    submit = SubmitField('Сохранить изменение')
 
 class ElementForm(FlaskForm):
     element_type = SelectField(
-        'Element Type',
-        choices=[('text', 'Text'), ('image', 'Image'), ('video', 'Video'), ('link', 'Link')],
+        'Тип элемента',
+        choices=[('text', 'Текст'), ('image', 'Картинка'), ('video', 'Видео'), ('link', 'Обычная ссылка'), ('links_doc', 'Ссылка на документ(картинка документа)'), ('links_site', 'Ссылка на какую-либо интернет страницу(картинка сети)')],
         validators=[DataRequired()]
     )
-    content = TextAreaField('Content', validators=[DataRequired()])
-    extra_data = TextAreaField('Extra Data (Optional)')
-    order = IntegerField('Order', validators=[DataRequired()])
-    submit = SubmitField('Save')
+    content = TextAreaField('Содержание', validators=[DataRequired()])
+    extra_data = TextAreaField('Дополнительные данные (необязательно)')
+    order = IntegerField('Порядок расположения', validators=[DataRequired()])
+    submit = SubmitField('Сохранить')

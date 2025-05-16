@@ -1,0 +1,20 @@
+{% for section in sections %}
+    <h3>{{ section.title }}</h3>
+    <ul>
+        {% for element in section.elements %}
+            <li>
+                {% if element.element_type == 'text' %}
+                    <p>{{ element.content }}</p>
+                {% elif element.element_type == 'image' %}
+                    <img src="{{ element.content }}" style="max-width: 100%;" alt="Image">
+                {% elif element.element_type == 'link' %}
+                    <a href="{{ element.extra_data }}">{{ element.content }}</a>
+                {% elif element.element_type == 'video' %}
+                    <video controls style="max-width: 100%;">
+                        <source src="{{ element.content }}" type="video/mp4">
+                    </video>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endfor %}

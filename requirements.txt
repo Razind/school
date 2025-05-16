@@ -15,8 +15,10 @@ pillow==10.3.0
 psycopg2-binary==2.9.9
 python-dotenv==1.0.1
 SQLAlchemy==2.0.31
+pymysql==1.0.3
 typing_extensions==4.12.2
 uWSGI==2.0.26
 Werkzeug==3.0.3
 WTForms==3.1.2
 flask_admin
+cryptography

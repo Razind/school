@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for
-from ..models import Page, Heading, TextBlock, Link, Media
+from ..models import Page, Heading, TextBlock, Link, Media, Section, Element
 from ..extensions import db
 from ..forms import PageForm, EditPageForm
 
@@ -11,6 +11,16 @@ page_bp = Blueprint('pages_bp', __name__)
 def pages_all():
     pages = Page.query.all()  # Получаем все страницы из базы данных
     return render_template('pages_all.html', pages=pages)  # Передаем страницы в шаблон
+
+@page_bp.route('/page_preview/<int:page_id>')
+def page_preview(page_id):
+    page = Page.query.get_or_404(page_id)
+    sections = Section.query.filter_by(page_id=page.id).order_by(Section.order).all()
+
+    for section in sections:
+        section.elements = Element.query.filter_by(section_id=section.id).order_by(Element.order).all()
+
+    return render_template('preview_page.html', page=page, sections=sections)
 
 # Create a new page
 @page_bp.route('/create', methods=['GET', 'POST'])
@@ -54,13 +64,16 @@ def add_text(page_id):
 
     return render_template('add_text.html', page=page)
 
-# View a page by its slug
 @page_bp.route('/page/<slug>')
 def view_page(slug):
     page = Page.query.filter_by(slug=slug).first_or_404()
-    headings = Heading.query.filter_by(page_id=page.id).all()
-    text_blocks = TextBlock.query.filter_by(page_id=page.id).all()
-    links = Link.query.filter_by(page_id=page.id).all()
-    media = Media.query.filter_by(page_id=page.id).all()
 
-    return render_template('view_page.html', page=page, headings=headings, text_blocks=text_blocks, links=links, media=media)
+    # Получаем секции и сортируем их по полю `order`
+    sections = Section.query.filter_by(page_id=page.id).order_by(Section.order).all()
+
+    # Для каждой секции получаем элементы, отсортированные по полю `order`
+    for section in sections:
+        section.elements = Element.query.filter_by(section_id=section.id).order_by(Element.order).all()
+
+    return render_template('view_page.html', page=page, sections=sections)
+

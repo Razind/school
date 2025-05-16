@@ -1,34 +1,51 @@
-{% extends 'base.html' %}
+{% extends 'main/base.html' %}
 
 {% block content %}
-  <h1>{{ page.name }}</h1>
-  <p>Slug: {{ page.slug }}</p>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_page.css') }}">
 
-  <h2>Headings</h2>
-  <ul>
-    {% for heading in headings %}
-      <li>{{ heading.content }}</li>
-    {% endfor %}
-  </ul>
+<div class="content-container">
+  <h1 class="page-title">{{ page.name }}</h1>
+  {% for section in sections %}
+    
 
-  <h2>Text Blocks</h2>
-  <ul>
-    {% for block in text_blocks %}
-      <li>{{ block.content }}</li>
-    {% endfor %}
-  </ul>
-
-  <h2>Links</h2>
-  <ul>
-    {% for link in links %}
-      <li><a href="{{ link.url }}">{{ link.url }}</a></li>
-    {% endfor %}
-  </ul>
-
-  <h2>Media</h2>
-  <ul>
-    {% for item in media %}
-      <li><img src="{{ item.url }}" alt="Media"></li>
-    {% endfor %}
-  </ul>
+    <ul class="section-elements">
+      {% for element in section.elements %}
+        <li class="element-item">
+          {% if element.element_type == 'text' %}
+            <p class="element-text">{{ element.content }}</p>
+          {% elif element.element_type == 'image' %}
+          <div style="max-width: 600px;">
+            <img class="element-image" src="{{ element.content }}" alt="Image">
+          </div>
+          {% elif element.element_type == 'link' %}
+            <ul class="info-list">
+              <a class="nav-link" href="{{ element.extra_data }}">{{ element.content }}</a>
+            </ul>
+          {% elif element.element_type == 'links_doc' %}
+            <ul class="info-list">
+              <li>
+                  <img src="{{ url_for('static', filename='img/icons8-d.png') }}" alt="icon1">
+                  <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ element.extra_data }}">{{ element.content }}</a>
+              </li>
+            </ul>
+          {% elif element.element_type == 'links_site' %}
+          <ul class="info-list">
+            <li>
+                <img src="{{ url_for('static', filename='img/icons8-i.png') }}" alt="icon1">
+                <a style="font-size: 18px; font-weight: 500;" class="nav-link" href="{{ element.extra_data }}">{{ element.content }}</a>
+            </li>
+          </ul>  
+          {% elif element.element_type == 'video' %}
+            <video class="element-video" controls>
+              <source src="{{ element.content }}" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          {% else %}
+            <p class="unknown-element">Неизвестный тип элемента: {{ element.element_type }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
 {% endblock %}

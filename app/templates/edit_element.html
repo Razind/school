@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="container mt-4">
-        <h1>{{ 'Edit Element' if form.element_type.data else 'Create Element' }}</h1>
+        <h1>{{ 'Редактирование элемента' if form.element_type.data else 'Создание элемента' }}</h1>
         <form method="post">
             {{ form.hidden_tag() }}
             <div class="mb-3">
@@ -21,8 +21,8 @@
                 {{ form.order.label(class="form-label") }}
                 {{ form.order(class="form-control") }}
             </div>
-            <button type="submit" class="btn btn-primary">Save</button>
-            <a href="{{ url_for('section_bp.manage_elements', section_id=section.id) }}" class="btn btn-secondary">Cancel</a>
+            <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+            <a href="{{ url_for('section_bp.manage_elements', section_id=section.id) }}" class="btn btn-secondary">Отмена</a>
         </form>
     </div>
 {% endblock %}

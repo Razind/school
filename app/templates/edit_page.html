@@ -1,22 +1,25 @@
 {% extends 'admin/base.html' %}
 
 {% block content %}
-  <h1>Edit Page</h1>
-  <form method="POST">
-    {{ form.hidden_tag() }}  <!-- для защиты от CSRF атак -->
-    
-    <div>
-      <label for="name">Name:</label>
-      {{ form.name(class="form-control") }}
-    </div>
+    <div class="container mt-4">
+        <h1>Изменение страницы</h1>
+        <form method="POST">
+            {{ form.hidden_tag() }}  <!-- для защиты от CSRF атак -->
+            
+            <div class="mb-3">
+                {{ form.name.label(class="form-label") }}
+                {{ form.name(class="form-control") }}
+            </div>
 
-    <div>
-      <label for="slug">Slug:</label>
-      {{ form.slug(class="form-control") }}
-    </div>
+            <div class="mb-3">
+                {{ form.slug.label(class="form-label") }}
+                {{ form.slug(class="form-control") }}
+            </div>
 
-    <div>
-      {{ form.submit(class="btn btn-primary") }}
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                <a href="{{ url_for('pages_bp.pages_all') }}" class="btn btn-secondary">Отмена</a>
+            </div>
+        </form>
     </div>
-  </form>
 {% endblock %}

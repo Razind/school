@@ -32,35 +32,36 @@
 <div class="col mb-3 text-end">
   <h5>Школьная жизнь</h5>
   <ul class="nav flex-column">
-    <li class="nav-item mb-2"><a href="/" class="nav-link p-0 ">Главная</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Информация<br> для родителей</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Школьная газета</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Школьный театр</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Олимпиада</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Воспитательная<br> работа</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Профориентация</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Медиация</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Летний лагерь</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Профилактическая<br> работа</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Методическая<br> копилка</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">О тебе, моя самара!</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Безопасность</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">ШСК</a></li>
+    <li class="nav-item mb-2"><a href="/" class="nav-link p-0">Главная</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.inf_dl_rod') }}" class="nav-link p-0">Информация<br> для родителей</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.sh_gaz') }}" class="nav-link p-0">Школьная газета</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.sh_teatr') }}" class="nav-link p-0">Школьный театр</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.olimp') }}" class="nav-link p-0">Олимпиада</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.vospit_rab') }}" class="nav-link p-0">Воспитательная<br> работа</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.profor') }}" class="nav-link p-0">Профориентация</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.mediac') }}" class="nav-link p-0">Медиация</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.let_lag') }}" class="nav-link p-0">Летний лагерь</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.profrab') }}" class="nav-link p-0">Профилактическая<br> работа</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.metodich_kopilka') }}" class="nav-link p-0">Методическая<br> копилка</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.o_tebe_sammara') }}" class="nav-link p-0">О тебе, моя Самара!</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.bezop') }}" class="nav-link p-0">Безопасность</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('shlive.shsk') }}" class="nav-link p-0">ШСК</a></li>
   </ul>
 </div>
 
 <div class="col mb-3 text-end">
   <h5>Учителя</h5>
   <ul class="nav flex-column">
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Учителя школы</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Наш профсоюз</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Охрана труда</a></li>
-    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Национальные<br> проекты</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('ychit.uchitelya_shkoli') }}" class="nav-link p-0">Учителя школы</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('ychit.nash_profsoyz') }}" class="nav-link p-0">Наш профсоюз</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('ychit.ohrana_truda') }}" class="nav-link p-0">Охрана труда</a></li>
+    <li class="nav-item mb-2"><a href="{{ url_for('ychit.nacional_proekti') }}" class="nav-link p-0">Национальные<br> проекты</a></li>
   </ul>
 </div>
 
 <div class="col mb-3 text-end">
-  <a href="#" class="nav-link p-0 "><h5>Классы</h5></a>
-  <a href="{{ url_for('user.login') }}" class="nav-link p-0 "><h5>Вход для<br> сотрудников</h5></a>
-  <!--<a href="{{ url_for('user.register') }}" class="nav-link p-0 "><h5>Рег. для<br> сотрудников</h5></a>-->
+  <a href="{{ url_for('klassi.str_klassi') }}" class="nav-link p-0"><h5>Классы</h5></a>
+  <a href="{{ url_for('user.login') }}" class="nav-link p-0"><h5>Вход для<br> сотрудников</h5></a>
+  <!--<a href="{{ url_for('user.register') }}" class="nav-link p-0"><h5>Рег. для<br> сотрудников</h5></a>-->
 </div>
+
