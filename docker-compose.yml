@@ -9,13 +9,12 @@ services:
     env_file:
       - .env
     environment:
-      - POSTGRES_HOST=ep-damp-cell-a2lo8071-pooler.eu-central-1.aws.neon.tech  # Изменено
+      - POSTGRES_HOST=ep-damp-cell-a2lo8071-pooler.eu-central-1.aws.neon.tech
       - POSTGRES_PORT=5432
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=${POSTGRES_DB}
-    ports:
-      - "8082:80"
+    #  Лучше не пробрасывать порты наружу
     networks:
       - app-network
 
@@ -29,7 +28,7 @@ services:
     depends_on:
       - flask
     ports:
-      - "8083:80"
+      - "80:80"  #  Чтобы сайт был доступен по http://<ip>
     networks:
       - app-network
 
